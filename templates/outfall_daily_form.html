@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block title %}Outfall Daily Entry{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Outfall Daily Entry Form</h2>
+    <form id="outfallForm" action="/submit-outfall" method="post">
+        <!-- Entry Timestamp -->
+        
+        <!-- Intended Timestamp -->
+        <p>
+        <label for="timestamp_intended_ISO">Timestamp:</label>
+        <input type="datetime-local" id="timestamp_intended_ISO" name="timestamp_intended_ISO" required><br>
+        <span>(The time that you select will be rounded down to the closest hour.)</span><br>
+        </p>
+        <br>
+        
+        <!-- Safe to Make Observation -->
+        <p>
+            <!--input type="hidden" name="safe_to_make_observation" value="false"-->
+            <label for="safe_to_make_observation">Safe to Make Observation:</label>
+            <select id="safe_to_make_observation" name="safe_to_make_observation">
+            <option value="" disabled selected>Select:</option>
+            <option value="True">True</option>
+            <option value="False">False</option>
+            </select>
+        </p>
+        
+
+        <!-- Floatable Present -->
+        <p>
+            <!--input type="hidden" name="floatable_present" value="false"-->
+            <label for="floatable_present">Floatable Present:</label>
+            <select id="floatable_present" name="floatable_present">
+            <option value="" disabled selected>Select:</option>
+            <option value="True">True</option>
+            <option value="False">False</option>
+            </select>
+        </p>
+
+        <!-- Scum Present -->
+        <p>
+            <!--input type="hidden" name="scum_present" value="false"-->
+            <label for="scum_present">Scum Present:</label>
+            <select id="scum_present" name="scum_present">
+            <option value="" disabled selected>Select:</option>
+            <option value="True">True</option>
+            <option value="False">False</option>
+            </select>
+        </p>
+
+        <!-- Foam Present -->
+        <p>
+            <!--input type="hidden" name="foam_present" value="false"-->
+            <label for="foam_present">Foam Present:</label>
+            <select id="foam_present" name="foam_present">
+            <option value="" disabled selected>Select:</option>
+            <option value="True">True</option>
+            <option value="False">False</option>
+            </select>
+        </p>
+
+        <!-- Oil Present -->
+        <p>
+        <!--input type="hidden" name="oil_present" value="false"-->
+        <label for="oil_present">Oil Present:</label>
+        <select id="oil_present" name="oil_present">
+        <option value="" disabled selected>Select:</option>
+        <option value="True">True</option>
+        <option value="False">False</option>
+        </select>
+        </p>
+        <br>
+
+        <!-- Operator Name -->
+        <p>
+        <label for="operator">Operator:</label>
+        <input type="text" id="operator" name="operator" placeholder="Optional"><br>
+        </p>
+        <br>
+
+        <!-- Submit Button -->
+        <p>
+        <button type="submit" class="btn green">Submit</button>
+        </p>
+    </form> 
+    <p id="warning" style="color: red; display: none;">Please make each selection!</p>
+</div>
+{% endblock %}
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('outfallForm').addEventListener('submit', function(event) {
+        const dropdowns = document.querySelectorAll('select'); // Select all dropdowns in the form
+        const warning = document.getElementById('warning');
+        let allValid = true;
+
+        // Loop through all dropdowns to check validity
+        dropdowns.forEach((dropdown) => {
+            if (!dropdown.value) {
+                allValid = false; // If any dropdown is not valid, set flag to false
+            }
+        });
+        if (!allValid) {
+            event.preventDefault(); // Prevent form submission
+            warning.style.display = 'block'; // Show warning
+        } else {
+            warning.style.display = 'none'; // Hide warning if all are valid
+        }
+    });
+});
+</script>

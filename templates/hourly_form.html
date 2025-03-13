@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}Hourly Data Entry{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Hourly Data Entry Form</h2>
+    <form id="hourlyForm" action="/submit-hourly" method="post">
+        <!-- Timestamp Input -->
+        <p>
+        <label for="timestamp_intended_ISO">Timestamp:</label>
+        <input type="datetime-local" id="timestamp_intended_ISO" name="timestamp_intended_ISO" required><br>
+        <span>(The time that you select will be rounded down to the closest hour.)</span><br>
+        </p>
+        <br>
+
+        <!-- Influent Flow Rate -->
+        <p class="hourly">
+        <label for="influent_flow_rate_MGD">Influent Flow Rate (MGD):</label>
+        <input type="number" step="0.1" id="influent_flow_rate_MGD" name="influent_flow_rate_MGD"><br>
+        </p>
+
+        <!-- After Wet Well Flow Rate -->
+        <p class="hourly">
+        <label for="after_wet_well_flow_rate_MGD">After Wet Well Flow Rate (MGD):</label>
+        <input type="number" step="0.1" id="after_wet_well_flow_rate_MGD" name="after_wet_well_flow_rate_MGD"><br>
+        </p>
+
+        <!-- Effluent Flow Rate -->
+        <p class="hourly">
+        <label for="effluent_flow_rate_MGD">Effluent Flow Rate (MGD):</label>
+        <input type="number" step="0.1" id="effluent_flow_rate_MGD" name="effluent_flow_rate_MGD"><br>
+        </p>
+        
+        <!-- WAS Flow Rate -->
+        <p class="hourly">
+        <label for="was_flow_rate_MGD">WAS Flow Rate (MGD):</label>
+        <input type="number" step="0.1" id="was_flow_rate_MGD" name="was_flow_rate_MGD"><br>
+        </p>
+
+        <!-- COD Prefinal mg/L -->
+        <p class="hourly">
+        <label for="cod_predisinfection_mgPerLiter">COD Prefinal (mg/L):</label>
+        <input type="number" step="0.1" id="cod_predisinfection_mgPerLiter" name="cod_predisinfection_mgPerLiter"><br>
+        </p>
+        <br>
+
+        <!-- Operator -->
+        <p>
+        <label for="operator">Operator:</label>
+        <input type="text" id="operator" name="operator" placeholder="Enter operator name"><br>
+        </p>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn green">Submit</button>
+    </form>
+    <p id="warning" style="color: red; display: none;">Please fill each field!</p>
+</div>
+{% endblock %}  
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('hourlyForm').addEventListener('submit', function(event) {
+        // Select all designated fields in the form based on className
+        const fields = document.getElementsByClassName('hourly');
+        const warning = document.getElementById('warning');
+        let allValid = true;
+
+        // Convert HTMLCollection to an array
+        Array.from(fields).forEach((field) => {
+            const input = field.querySelector('input');
+            if (input && input.value.trim() === "") {
+                allValid = false; // If any field is not valid, set flag to false
+                console.log(`Field ${input.id} is empty.`);
+            }
+        });
+
+        // Handle the case when allValid is false
+        if (!allValid) {
+            warning.style.display = 'block';
+            event.preventDefault(); // Prevent form submission if validation fails
+            console.log('Form submission prevented.');
+        } else {
+            warning.style.display = 'none';
+            console.log('Form submission allowed.');
+        }
+    });
+});
+</script>

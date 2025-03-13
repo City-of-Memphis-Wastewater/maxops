@@ -1,0 +1,1 @@
+Start-Process -NoNewWindow -Wait poetry -ArgumentList "run python -m uvicorn app.main:app --reload"

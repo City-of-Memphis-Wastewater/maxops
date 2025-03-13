@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "maxops"
+version = "0.1.0"
+description = "A cmd2-powered interactive shell and web app for managing batch workflows and data."
+authors = ["G. Clayton Bennett <george.bennett@memphistn.gov>"]
+license = "BSD-3"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"  # Specify compatible Python versions
+fastapi = "^0.94.1"  # For building the web app
+uvicorn = "^0.21.1"  # For running the ASGI server
+cmd2 = "^2.5.3"  # For the interactive shell
+requests = "^2.28.2"  # For making API calls
+toml = "^0.10.2"  # For handling TOML file generation and parsing
+jinja2 = "^3.1.6"
+python-multipart = "^0.0.20"
+freesimplegui = "^5.1.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"  # For testing
+black = "^22.12.0"  # For code formatting
+flake8 = "^6.0.0"  # For linting
+mypy = "^1.0.1"  # For type checking
+isort = "^5.11.0"  # For sorting imports
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

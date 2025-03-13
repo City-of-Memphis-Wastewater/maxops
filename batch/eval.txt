@@ -1,0 +1,4 @@
+sett a=(1)
+sett b=(2)
+sett c=($a+$b)
+eval $c

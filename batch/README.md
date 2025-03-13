@@ -1,0 +1,1 @@
+These are batch scripts meant to be run in /shell/shell.py using the do_batch() function.

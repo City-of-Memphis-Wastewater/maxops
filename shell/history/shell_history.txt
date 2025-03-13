@@ -1,0 +1,656 @@
+test
+quit
+test
+history
+spoof_hourly -t 2025-03-07T11:10:28 -f 5150 -c 01 -w now-test
+history
+eval self.history
+history
+quit
+quit
+history
+test
+history
+quit
+test
+history
+history
+history
+test
+test
+history
+quit
+history
+test
+history
+spoof_hourly -t 2025-03-07T11:10:28 -f 5150 -c 01 -w now-test
+spoof_hourly -t 2025-03-07T11:10:28 -f 5150 -c 01 -w now-test
+spoof_hourly --timestamp now --flow_rate 5150 --cod 01 --water_quality now-test
+quit
+history
+git add .
+quit
+spoof_hourly --timestamp now --flow_rate 5150 --cod 01 --water_quality "go work on daily"
+quit
+spoof_daily --timestamp now -c "spinning backwards" -o "coffee x3"
+quit
+quit
+quit
+spoof_daily --timestamp now -c "spinning backwards" -o "coffee x3"
+spoof_daily --timestamp now -c "spinning forwards" -o "coffee x2"
+spoof_hourly --timestamp now --flow_rate 4190 --cod 99 --water_quality "succeeded in modular file write, keys dictated by shell flags"
+quit
+quit
+quit
+quit
+spoof_hourly --timestamp now --flow_rate 4190 --cod 99 --water_quality "succeeded in modular file write, keys dictated by shell flags"
+spoof_hourly --timestamp now --flow_rate 4190 --cod 99 --water_quality "succeeded in modular file write, keys dictated by shell flags"
+spoof_daily --timestamp now -c "stopped" -o "coffee x1"
+quit
+spoof_daily --timestamp now -c "stopped"
+spoof_daily --timestamp now
+quit
+spoof_daily --timestamp now -c "stopped" -o "coffee x1"
+quit
+spoof_hourly --timestamp now --flow_rate 55 --cod 99 --water_quality "clear"
+now
+spoof_hourly --timestamp 2025-03-07T14:07:51 --flow_rate 55 --cod 99 --water_quality "clear"
+spoof_hourly --timestamp now --flow_rate 55 --cod 99 --water_quality "clear"
+spoof_hourly --timestamp now --flow_rate 55 --cod 99 --water_quality "sudsy"
+help
+run_webapp
+run_webapp
+run_webapp
+quit
+set my_variable 42
+quit
+set my_variable 42
+help
+set my_variable 42
+set
+maxops> set always_show_hint True
+set always_show_hint True
+set always_show_hint False
+set
+show
+quit
+sett t 1
+sett
+quit
+sett t 1
+sett username Alive
+quit
+sett username Alive
+quit
+sett username Alive
+quit
+eval self.vars
+quit
+sett username Alice
+gett username
+show
+$username
+echo $username
+quit
+sett username Alice
+$username
+sett bees Q
+$username+$bees
+sett a 1
+sett b 2
+$a+$b
+eval $a+$b
+eval ($a+$b)
+quit
+sett a 1
+sett b 2
+eval ($a+$b)
+eval $a
+eval (a+b)
+sett a = 1
+sett a = (1+2)
+sett a (1+2)
+sett a eval(1+2)
+quit
+sett a eval(1+2)
+sett a=eval(1+2)
+sett a=(1+2)
+quit
+sett a = (1+2)
+sett a=eval(1+2)
+eval (a+b)
+eval (a+b)
+quit
+eval 1
+sett a = (1+2)
+sett a = quit(1+2)
+quit
+sett a = (1+2)
+$a
+sett a = (1+2)
+sett a = eval(1+2)
+eval(1+2)
+quit
+eval(1+2)
+eval
+eva1 1
+sett a = (1+2)
+quit
+sett a = (1+2)
+quit
+sett a = (1+2)
+$a
+eval($a)
+eval(a)
+eval(a+1)
+quit
+sett a = (1+2)
+eval(a+1)
+eval(a)
+a
+eval($a)
+eval($a+1)
+eval a+b
+eval $a+$b
+$b=1
+$b
+sett $b=1
+eval $a+$b
+eval($a+$b)
+quit
+sett $b=1
+sett b 1
+sett b 2
+sett a 3
+gett b
+gett a
+gett b
+history
+eval($a+$b)
+eval $a+$b
+eval $a
+$a
+eval
+eval
+eval -h
+quit
+sett a 3
+sett b 1
+eval $a
+eval($a)
+$a
+sett $a
+gett $a
+gett a
+gett a
+gett b
+gett b+a
+gett(b+a)
+eval(b+a)
+eval($b+$a)
+eval($b+$a)
+$b
+quit
+sett b 1
+$b
+b
+gett b
+$b
+quit
+$
+$a
+sett a=1
+sett a 1
+sett a=(1)
+$a
+quit
+sett a 1
+sett a=(1)
+$a
+gett a
+eval a
+sett b=(2)
+eval a+b
+eval (a+b)
+eval ($a+$b)
+$a+$b
+quit
+sett b=(2)
+sett a=(1)
+eval ($a+$b)
+eval (a+b)
+eval ($a+b)
+sett c=($a+$b)
+eval c
+eval $c
+$c
+quit
+sett b=(2)
+sett a=(1)
+sett c=($a+$b)
+eval $c
+eval c
+quit
+batch eval.txt
+batch eval.txt
+eval ($a+$b)
+quit
+help
+now
+spoof_hourly
+ii .exports\intermediate\hourly_data.toml
+ii .exports\intermediate\hourly_data.json
+os
+import os
+1
+2
+3
+4
+help
+quit
+os
+eval os
+import os
+eval os
+spoof_hourly
+quit
+spoof_hourly
+spoof_daily
+spoof_daily
+quit
+outfall
+spook_outfall
+spook_outfall
+quit
+rtrtrtr
+quit
+quit
+1
+eval
+eval 1
+eval 1p
+quit
+spoof_hourly
+spoof_hourly
+quit
+spoof_hourly
+quit
+spoof_hourly
+qui
+quit
+spoof_hourly -t 13
+spoof_hourly -t 23.5 -i 87 -e 89 -a 88 -w 1
+spoof_hourly -t 23 -i 87 -e 89 -a 88 -w 1
+quit
+spoof_hourly -t 23.5 -i 87 -e 89 -a 88 -w 1
+quit
+spoof_hourly -t 23.5 -i 87 -e 89 -a 88 -w 1
+quit
+spoof_hourly -t 23 -i 87 -e 89 -a 88 -w 1
+spoof_hourly -t 23.2 -i 87 -e 89 -a 88 -w 1
+spoof_hourly -t 23.2 -i 87 -e 89 -a 88 -w 1
+quit
+spoof_hourly -t 23 -i 87 -e 89 -a 88 -w 1
+quit
+spoof_hourly -t 23 -i 87 -e 89 -a 88 -w 1
+quit
+spoof_hourly -t 23 -i 87 -e 89 -a 88 -w 1
+int(24.5)
+evalint(24.5)
+eval int(24.5)
+eval str(24.5).isnumeric()
+eval str(24).isnumeric()
+eval int(24.5).isnumeric()
+eval int(24.5).isnumeric()
+eval str(round(24.5,0).isnumeric()
+eval str(round(24.5,0)).isnumeric()
+eval round(24.5,0))
+eval round(24.5,0)
+eval int(round(24.5,0))
+eval str(round(24.5,0)).isdemical()
+eval round(24.5,0).isdemical()
+eval str(round(24.5,0)).isdecimal()
+eval str(round(24.5,1)).isdecimal()
+eval round(24.5,0).isnumeric()
+spoof_hourly -t 1 -i 45 -e 55 -a 77 -w 1
+now
+now
+iso_format = now.strftime("%Y-%m-%dT%H:%M:%S")
+eval iso_format = now.strftime("%Y-%m-%dT%H:%M:%S")
+eval (now).strftime("%Y-%m-%dT%H:%M:%S")
+eval (2025-03-09T15:31:39).strftime("%Y-%m-%dT%H:%M:%S")
+eval (str(2025-03-09T15:31:39)).strftime("%Y-%m-%dT%H:%M:%S")
+eval datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S").strftime(
+eval datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S").strftime("%Y-%m-%dT%H:%M:%S")
+import datetime
+now
+eval now
+quit
+quit
+quit
+spoof_hourly -t 1 -i 45 -e 55 -a 77 -w 1
+quit
+spoof_hourly -t 1 -i 45 -e 55 -a 77 -w 1
+quit
+spoof_hourly -t 1 -i 45 -e 55 -a 77 -w 1
+quit
+spoof_hourly -t 1 -i 45 -e 55 -a 77 -w 1
+quit
+spoof_hourly -t 13 -i 45 -e 55 -a 77 -w 1
+spoof_hourly -t 13.5 -i 45 -e 55 -a 77 -w 1
+quit
+spoof_hourly -t 13.5 -i 45 -e 55 -a 77 -w 1
+quit
+spoof_hourly -t 13.5 -i 45 -e 55 -a 77 -w 1
+quit
+spoof_hourly -t 13.5 -i 45 -e 55 -a 77 -w 1
+quit
+spoof_hourly -t 13 -i 45 -e 55 -a 77 -w 1
+quit
+spoof_hourly -t 13 -i 45 -e 55 -a 77 -w 1
+spoof_hourly -t 13.5 -i 45 -e 55 -a 77 -w 1
+eval int(13.5)
+int("13.5")
+eval int("13.5")
+eval int(float("13.5"))
+eval int(float("#we2"))
+eval int(float("#w2"))
+eval int(float("#2"))
+eval int(float("2"))
+eval int(float("we"))
+eval int(float("w"))
+quit
+spoof_hourly -t 13.5 -i 45 -e 55 -a 77 -w 1
+qui
+quit
+outfall -h
+outfall
+h
+help
+quit
+spoof_outfall -t now -safe 1 -float 1 -scum 1 -foam 1 -oil 0
+spoof_outfall -t now -safe 1 -float 1 -scum 1 -foam 1 -oil 0
+quit
+quit
+spoof_outfall -t now -safe 1 -float 1 -scum 1 -foam 1 -oil 0
+eof
+spoof_outfall -t now -safe 1 -float 1 -scum 1 -foam 1 -oil 0
+self.do_spoof_hourly("--help")quit
+self.do_spoof_hourly("--help")quit
+quit
+self.do_spoof_hourly("--help")quit
+quit
+spoof_hourly
+quit
+quit
+spoof_outfall_daiy
+quit
+spoof_outfall_daily -safe 1 -float 1 -scum 0 -foam 0
+spoof_hourly -t now -i 88 -a 87 -e 79 -w 1.3
+spoof_hourly -t 13 -i 78 -a 77 -e 75 -w 2.
+spoof_outfall_daily -safe 1 -float 1 -scum 0 -foam 0 -oil 1
+spoof_hourly --timestamp now --influent_flow_rate_MGD 67 --after_wet_well_flow_rate_MGD 66 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5
+idontknowthiscommand
+test
+quit
+spoof_hourly --timestamp now --influent_flow_rate_MGD 67 --after_wet_well_flow_rate_MGD 66 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5
+spoof_hourly --timestamp 14 --influent_flow_rate_MGD 67 --after_wet_well_flow_rate_MGD 66 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5
+spoof_outfall_daily -t 15 -safe 1 -float 1 -scum 0 -foam 0 -oil 1
+quit
+quit
+spoof_outfall_daily -t 15 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Clayton Bennett"
+spoof_hourly --timestamp 14 --influent_flow_rate_MGD 67 --after_wet_well_flow_rate_MGD 66 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+quit
+spoof_hourly --timestamp 14 --influent_flow_rate_MGD 67 --after_wet_well_flow_rate_MGD 66 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+spoof_hourly --timestamp now --influent_flow_rate_MGD 67 --after_wet_well_flow_rate_MGD 66 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+spoof_outfall_daily -t 15 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Clayton Bennett"
+batch spoof_09March2025.txt
+batch eval.txt
+eevall
+quit
+rrr
+rrrrr
+sett r=1
+$r
+eval $r
+batch eval
+batch eval.txt
+spoof_hourly --timestamp now --influent_flow_rate_MGD 67 --after_wet_well_flow_rate_MGD 66 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+spoof_hourly --timestamp 15  --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+spoof_outfall_daily -t 15 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Clayton Bennett"
+batch spoof_09March2025.txt
+now
+spoof_outfall_daily -t 16 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Clayton Bennett"
+quit
+spoof_outfall_daily -t 16 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Clayton Bennett"
+spoof_hourly --timestamp 15  --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+quit
+spoof_outfall_daily -t 16 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Henry Lee Clark"
+quit
+spoof_outfall_daily -t 16 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Henry Lee Clark"
+quit
+run_webapp
+quit
+spoof_outfall_daily -t 16 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Henry Lee Clark"
+spoof_outfall_daily -t 16 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Henry Lee Clark"
+spoof_outfall_daily -t 16 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Henry Lee Clark"
+spoof_hourly --timestamp 15  --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+quit
+spoof_hourly --timestamp 15  --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+spoof_hourly --timestamp 15  --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+spoof_outfall_daily -t 16 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Henry Lee Clark"
+quit
+run_webapp
+quit
+spoof_outfall_daily -t 16 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Henry Lee Clark"
+spoof_hourly --timestamp 15  --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+spoof_hourly --timestamp 15  --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+quit
+r
+quit
+quit
+quit
+gui
+quit
+gui
+help
+help -v
+tutorial
+clear_exports
+list_exports
+gui
+list_exports
+notepad++
+notepad
+quit
+help
+show
+$
+quit
+tt
+batch eval.txt
+$c
+eval $c
+gui
+quit
+runserver
+gui
+quit
+gui
+quit
+spoof_hourly --timestamp 12  --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+spoof_outfall_daily -t 16 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Henry Lee Clark"
+gui
+quit
+spoof_hourly --timestamp 12 --influent_flow_rate_MGD 100 --after_wet_well_flow_rate_MGD 50 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+spoof_hourly --timestamp 13 --influent_flow_rate_MGD 100 --after_wet_well_flow_rate_MGD 99 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Henry Winkler"
+spoof_hourly --timestamp 13 --influent_flow_rate_MGD 100 --after_wet_well_flow_rate_MGD 99 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Batch Eval"
+spoof_hourly --timestamp 13 --influent_flow_rate_MGD 100 --after_wet_well_flow_rate_MGD 99 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Batch Eval"
+batch spoof_09March2025.txt
+batch spoof_09March2025.txt
+gui
+gui
+quit
+quit
+quit
+quit
+quit
+gu
+gui
+quit
+gui
+quit
+quit
+quit
+gui
+quit
+gui
+quit
+gui
+quit
+gui
+batch spoof_09March2025.txt
+run_webapp
+gui
+quit
+run_webapp
+quit
+run_webapp
+quit
+run_webapp
+quit
+run_webapp
+quit
+clear
+quit
+quit
+gui
+quit
+run_webapp
+quit
+gui
+spoof_outfall_daily -t 15 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Batch Eval"
+run_webapp
+quit
+gui
+quit
+run_webapp
+quit
+quit
+quit
+gui
+quit
+run_webapp
+quit
+run_webapp
+quit
+run_webapp
+quit
+run_webapp
+run_webapp
+quit
+gui
+quit
+run_webapp
+exit
+help
+query
+batch dungeon.txt
+tutorial
+help
+sett a=5
+sett b="test"
+$b
+eval $b
+eval $a
+eval $a+$b
+eval str($a)+$b
+entry
+getttttt
+entry -h
+history
+quit
+spoof
+help
+spoof_hourly -t 10 -i 99
+quit
+spoof_hourly -t 10 -i 99 -a 98 -e 88 -w 1.5 -c 150 -op CB
+run_webapp
+quit
+run_webapp
+quit
+run_webapp
+quit
+spoof_hourly -t 10 -i 99 -a 98 -e 88 -w 1.5 -c 150 -op CB
+gui
+gui
+gui
+quit
+gui
+gui
+gui
+quit
+gui
+quit
+batch basin_clarifier_flows.txt
+batch basin_clarifier_flows.txt
+multiline
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+python
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+batch basin_clarifier_flows.txt
+batch basin_clarifier_flows.txt
+batch basin_clarifier_flows.txt
+clear
+quit
+batch basin_clarifier_flows.txt
+run_webapp
+batch basin_clarifier_flows.txt
+git add .
+quit
+batch basin_clarifier_flows.txt
+batch basin_clarifier_flows.txt
+quit
+batch basin_clarifier_flows.txt
+batch basin_clarifier_flows.txt
+run_webapp
+batch basin_clarifier_flows.txt
+batch basin_clarifier_flows.txt
+batch basin_clarifier_flows.txt
+quit

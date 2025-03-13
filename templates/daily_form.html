@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Daily Data Entry{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Daily Data Entry Form</h2>
+    <form id="dailyForm" action="/submit-daily" method="post">
+        <!-- Date Input -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <!-- Clarifier Status Dropdown -->
+        <label for="clarifier_status">Clarifier Status:</label>
+        <select id="clarifier_status" name="clarifier_status" required>
+            <option value="" disabled selected>Select a status</option>
+            <option value="operational">Operational</option>
+            <option value="under maintenance">Under Maintenance</option>
+            <option value="out of service">Out of Service</option>
+        </select><br>
+
+        <!-- Observations -->
+        <label for="observations">Observations:</label>
+        <textarea id="observations" name="observations" rows="5" placeholder="Enter your observations..." required></textarea><br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn green">Submit</button>
+    </form>
+</div>
+{% endblock %}

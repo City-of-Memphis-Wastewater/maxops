@@ -1,0 +1,4 @@
+spoof_hourly --timestamp now --influent_flow_rate_MGD 67 --after_wet_well_flow_rate_MGD 66 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Clayton Bennett"
+spoof_outfall_daily -t 15 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Clayton Bennett"
+spoof_hourly --timestamp 13 --influent_flow_rate_MGD 100 --after_wet_well_flow_rate_MGD 99 --effluent_flow_rate_MGD 63 --was_flow_rate_MGD 1.5 -op "Batch Eval"
+spoof_outfall_daily -t 15 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Batch Eval"

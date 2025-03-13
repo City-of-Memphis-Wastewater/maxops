@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MaxOps Web App{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>MaxOps Web App</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/daily-form">Daily Form</a></li>
+            <li><a href="/hourly-form">Hourly Form</a></li>
+            <li><a href="/outfall-daily-form">Outfall Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <button id="modeToggle" class="btn orange">Switch to Dark Mode</button>
+            <p>&copy; 2025 MaxOps. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Shared script for dark mode and auto-populating datetime -->
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

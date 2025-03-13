@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Submission Success{% endblock %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Success</title>
+</head>
+<body>
+    <h1>{{ header }}</h1>
+    <p>Your data has been successfully submitted!</p>
+    <div>
+        <p>What would you like to do next?</p>
+        <button onclick="location.href='{{ previous_page }}';">Submit Another Entry</button>
+        <button onclick="location.href='/dashboard';">Back to Dashboard</button>
+    </div>
+</body>
+{% endblock %}  

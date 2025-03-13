@@ -1,0 +1,65 @@
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
+
+
+/* Default styles (light mode) */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --green-light: #d4eac7;
+    --green-dark: #88c070;
+    --orange-light: #f3b491;
+    --orange-dark: #c65a19;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.green {
+    background-color: var(--green-light);
+    color: var(--green-dark);
+}
+
+button.green:hover {
+    background-color: var(--green-dark);
+    color: #ffffff;
+}
+
+button.orange {
+    background-color: var(--orange-light);
+    color: var(--orange-dark);
+}
+
+button.orange:hover {
+    background-color: var(--orange-dark);
+    color: #ffffff;
+}
+
+/* Dark mode overrides */
+.dark-mode {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --green-light: #375b31;
+    --green-dark: #1b3317;
+    --orange-light: #8b3a18;
+    --orange-dark: #5a1f0f;
+}

@@ -1,0 +1,1 @@
+spoof_hourly 2025-03-07T09:13:25 120.5 38.1 "terrible and sudsy"

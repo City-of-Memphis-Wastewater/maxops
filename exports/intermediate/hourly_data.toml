@@ -1,0 +1,153 @@
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-11T14:50:48"
+timestamp_intended_ISO = "2025-03-11T14:50:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-11T14:51:02"
+timestamp_intended_ISO = "2025-03-11T14:50:00"
+influent_flow_rate_MGD = 66.0
+after_wet_well_flow_rate_MGD = 66.0
+effluent_flow_rate_MGD = 66.0
+was_flow_rate_MGD = 66.0
+operator = "66"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-11T14:52:05"
+timestamp_intended_ISO = "2025-03-11T14:52:04"
+after_wet_well_flow_rate_MGD = 0.0
+effluent_flow_rate_MGD = 0.0
+was_flow_rate_MGD = 0.0
+operator = "Clayton Bennett"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T10:49:45"
+timestamp_intended_ISO = "2025-03-12T10:00:00"
+influent_flow_rate_MGD = 99.0
+after_wet_well_flow_rate_MGD = 98.0
+effluent_flow_rate_MGD = 88.0
+was_flow_rate_MGD = 1.5
+cod_predisinfection_mgPerLiter = 150.0
+operator = "CB"
+source = "local-shell-Python-cmd2"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T10:51:01"
+timestamp_intended_ISO = "2025-03-12T10:50:00"
+influent_flow_rate_MGD = 88.0
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:01:04"
+timestamp_intended_ISO = "2025-03-12T11:01:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:01:24"
+timestamp_intended_ISO = "2025-03-12T11:01:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:03:09"
+timestamp_intended_ISO = "2025-03-12T11:03:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:07:11"
+timestamp_intended_ISO = "2025-03-12T11:07:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:08:14"
+timestamp_intended_ISO = "2025-03-12T11:08:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:11:10"
+timestamp_intended_ISO = "2025-03-12T11:08:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:15:36"
+timestamp_intended_ISO = "2025-03-12T11:15:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:16:14"
+timestamp_intended_ISO = "2025-03-12T11:16:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:17:35"
+timestamp_intended_ISO = "2025-03-12T11:17:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:22:00"
+timestamp_intended_ISO = "2025-03-12T11:21:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:22:43"
+timestamp_intended_ISO = "2025-03-12T11:22:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:25:54"
+timestamp_intended_ISO = "2025-03-12T11:25:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:29:45"
+timestamp_intended_ISO = "2025-03-12T10:00:00"
+influent_flow_rate_MGD = 99.0
+after_wet_well_flow_rate_MGD = 98.0
+effluent_flow_rate_MGD = 88.0
+was_flow_rate_MGD = 1.5
+cod_predisinfection_mgPerLiter = 150.0
+operator = "CB"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T11:35:36"
+timestamp_intended_ISO = "2025-03-12T11:35:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T12:09:15"
+timestamp_intended_ISO = "2025-03-12T12:09:13"
+after_wet_well_flow_rate_MGD = 0.0
+effluent_flow_rate_MGD = 0.0
+was_flow_rate_MGD = 0.0
+cod_predisinfection_mgPerLiter = 0.0
+operator = "Clayton Bennett"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T12:17:16"
+timestamp_intended_ISO = "2025-03-12T11:35:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T12:17:53"
+timestamp_intended_ISO = "2025-03-12T12:17:51"
+after_wet_well_flow_rate_MGD = 0.0
+effluent_flow_rate_MGD = 0.0
+was_flow_rate_MGD = 0.0
+cod_predisinfection_mgPerLiter = 0.0
+operator = "Clayton Bennett"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T12:20:13"
+timestamp_intended_ISO = "2025-03-12T12:20:12"
+influent_flow_rate_MGD = 0.0
+after_wet_well_flow_rate_MGD = 0.0
+effluent_flow_rate_MGD = 0.0
+was_flow_rate_MGD = 0.0
+cod_predisinfection_mgPerLiter = 0.0
+operator = "Clayton Bennett"
+source = "web-post-Python-FastAPI"
+
