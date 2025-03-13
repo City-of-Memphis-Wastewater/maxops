@@ -20,12 +20,12 @@ print(f"dir(wof) = {dir(wof)}")
 "mock up the appearance of the data entry"
 
 '''
-
+import os
 import FreeSimpleGUI as sg
+
 from gui.gui_outfall import outfall_window
 from gui.gui_hourly import hourly_window
 from gui.gui_basins_clarifiers_hourly import hourly_basin_clarifiers_window
-import os
 from gui.gui_known import known_window
 
 #print(dir(sg))

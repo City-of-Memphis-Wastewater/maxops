@@ -803,3 +803,75 @@ quit
 gui
 gui
 quit
+gui
+ii .
+ii .
+open -b
+open -p
+sd
+sd
+sd
+sd
+sd
+sd
+sd
+sd
+sd
+sd
+history
+clear
+quit
+gui
+quit
+quit
+gui
+quit
+gui
+quit
+gui
+quit
+gui
+quit
+gui
+quit
+gui
+quit
+gui
+quit
+gui
+quit
+run_webapp
+gui
+quit
+gui
+quit
+gui
+gui
+help
+spoof_outfall_daily -t now -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Batch Eval"
+batch -f spoof_outfall_daily.txt
+help
+tutorial
+query
+batch -f k.txt
+quit
+about
+run_webapp
+quit
+run_webapp
+help
+history
+spoof_outfall_daily -t now -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Batch Eval"
+about
+clear
+postcmd
+help
+help
+quit
+help
+clear -h
+help clear
+spoof_outfall_daily --timestamp now -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Batch Eval"
+quit
+gui
+quit

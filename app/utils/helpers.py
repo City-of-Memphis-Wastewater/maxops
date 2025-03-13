@@ -171,6 +171,8 @@ def nowtime():
 def sanitize_time(timestamp):
     print(f"timestamp = {timestamp}")
     # Check and handle the timestamp, if it has minutes but not seconds
+    if len(timestamp)<16 and len(timestamp)>2:
+        raise ValueError("Invalid time value.")
     try:
         # Attempt to parse the timestamp with the "%Y-%m-%dT%H:%M" format (up to minutes)
         datetime.strptime(timestamp, "%Y-%m-%dT%H:%M")

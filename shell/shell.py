@@ -134,6 +134,7 @@ class ShellApp(cmd2.Cmd):
     
     # === Command: Clear ===
     def do_clear(self,line):
+        "Clear the window."
         try:
             os.system("cls")
         except:

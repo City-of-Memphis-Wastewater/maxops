@@ -6,14 +6,17 @@ def outfall_window():
     default_time = helpers.nowtime()
 
     layout = [
-        [sg.Text("Operator Name:"), sg.InputText(default_text="Clayton Bennett", key="operator")],
-        [sg.Text("Time of Observation:"), sg.InputText(default_text=default_time, key="timestamp")],
+        [sg.Text("Operator Initials:"), sg.InputText(default_text="", key="operator", size=(20, 1))],
+        [sg.Text("Time of Observation:"), sg.InputText(default_text=default_time, key="timestamp", size=(20, 1))],
+        [sg.Text("Time can be the hour (ex: 14) or in ISO time (ex: 2025-03-13T14:00) .",font=("Helvetica", 8, "italic"))],
+        [sg.Text("Time will be round down to the closest hour.",font=("Helvetica", 8, "italic"))],
         [sg.Text("Safe to Make Observation:"), sg.Combo(["",True, False], default_value="", key="safe_to_make_observation")],
         [sg.Text("Floatable Present:"), sg.Combo(["",True, False], default_value="", key="floatable_present")],
         [sg.Text("Scum Present:"), sg.Combo(["",True, False], default_value="", key="scum_present")],
         [sg.Text("Foam Present:"), sg.Combo(["",True, False], default_value="", key="foam_present")],
         [sg.Text("Oil Present:"), sg.Combo(["",True, False], default_value="", key="oil_present")],
-        [sg.Button("Submit"), sg.Button("Close")]
+        [sg.Button("Submit"), sg.Button("Close")],
+        [sg.Text("If you submit multiple values in an hour, the most recent one will be used.",font=("Helvetica", 8, "italic"))]
     ]
 
     window = sg.Window("Outfall Frame", layout)
@@ -46,7 +49,7 @@ def outfall_window():
                     }
 
                 except Exception as e:
-                    print(f"Error spoofing hourly data: {e}")
+                    print(f"Error passing data: {e}")
                     data = None
                     sg.PopupError(f"Failed to save data: {e}")
 

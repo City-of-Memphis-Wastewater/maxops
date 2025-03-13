@@ -19,3 +19,11 @@ timestamp_entry_ISO,timestamp_intended_ISO,north_basin_1_MGD,north_basin_3_MGD,n
 2025-03-13T13:10:59,2025-03-13T13:10:50,Yes,Yes,Yes,Yes,Yes,Clayton Bennett,local-gui-Python-FreeSimpleGUI
 2025-03-13T13:13:31,2025-03-13T13:13:21,True,True,False,False,False,Clayton Bennett,local-gui-Python-FreeSimpleGUI
 2025-03-13T13:38:49,2025-03-13T13:38:37,True,True,False,True,False,JT,web-post-Python-FastAPI
+2025-03-13T14:06:55,2025-03-13T12:06:31,True,False,False,False,True,Clayton Bennett,web-post-Python-FastAPI
+2025-03-13T14:50:40,2025-03-13T14:50:31,True,False,True,False,True,CB,local-gui-Python-FreeSimpleGUI
+2025-03-13T14:52:11,2025-03-13T14:51:47,True,True,True,True,True,CB,web-post-Python-FastAPI
+2025-03-13T14:55:09,2025-03-13T14:55:09,True,True,False,False,True,Batch Eval,web-post-Python-FastAPI
+2025-03-13T14:55:33,2025-03-13T15:00:00,True,True,False,False,True,Clayton Bennett,web-post-Python-FastAPI
+2025-03-13T14:55:33,2025-03-13T14:55:33,True,True,False,False,True,Batch Eval,web-post-Python-FastAPI
+2025-03-13T15:17:37,2025-03-13T15:17:37,True,True,False,False,True,Batch Eval,local-shell-Python-cmd2
+2025-03-13T15:22:31,2025-03-13T15:22:31,True,True,False,False,True,Batch Eval,local-shell-Python-cmd2

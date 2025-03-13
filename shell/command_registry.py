@@ -49,7 +49,7 @@ def spoof_hourly(shell_instance, args):
         response = requests.post("http://localhost:8000/submit-hourly", data=data)
         print(f"Server response: {response.json()}")
     except Exception as e:
-        print(f"Error spoofing hourly data: {e}")
+        print(f"Error passing data: {e}")
 
 
 def spoof_daily(shell_instance, args):

@@ -5,14 +5,17 @@ import app.utils.helpers as helpers
 def hourly_window():
     default_time = helpers.nowtime()
     layout = [
-        [sg.Text("Operator Name:"), sg.InputText(default_text="Clayton Bennett", key="operator")],
-        [sg.Text("Timestamp (ISO Format):"), sg.InputText(default_text=default_time, key="timestamp")],
-        [sg.Text("Influent Flow Rate (MGD):"), sg.InputText(default_text="", key="influent_flow_rate_MGD")],
-        [sg.Text("After Wet Well Flow Rate (MGD):"), sg.InputText(default_text="", key="after_wet_well_flow_rate_MGD")],
-        [sg.Text("Effluent Flow Rate (MGD):"), sg.InputText(default_text="", key="effluent_flow_rate_MGD")],
-        [sg.Text("WAS Flow Rate (MGD):"), sg.InputText(default_text="", key="was_flow_rate_MGD")],
-        [sg.Text("COD Pre-Disinfection (mg/Liter):"),sg.InputText(default_text="", key="cod_predisinfection_mgPerLiter")],
-        [sg.Button("Submit"), sg.Button("Close")]
+        [sg.Text("Operator Initials:"), sg.InputText(default_text="", key="operator", size=(20, 1))],
+        [sg.Text("Time of Observation:"), sg.InputText(default_text=default_time, key="timestamp", size=(20, 1))],
+        [sg.Text("Time can be the hour (ex: 14) or in ISO time (ex: 2025-03-13T14:00) .",font=("Helvetica", 8, "italic"))],
+        [sg.Text("Time will be round down to the closest hour.",font=("Helvetica", 8, "italic"))],
+        [sg.Text("Influent Flow Rate (MGD):"), sg.InputText(default_text="", key="influent_flow_rate_MGD", size=(9, 1))],
+        [sg.Text("After Wet Well Flow Rate (MGD):"), sg.InputText(default_text="", key="after_wet_well_flow_rate_MGD", size=(9, 1))],
+        [sg.Text("Effluent Flow Rate (MGD):"), sg.InputText(default_text="", key="effluent_flow_rate_MGD", size=(9, 1))],
+        [sg.Text("WAS Flow Rate (MGD):"), sg.InputText(default_text="", key="was_flow_rate_MGD", size=(9, 1))],
+        [sg.Text("COD Pre-Disinfection (mg/Liter):"),sg.InputText(default_text="", key="cod_predisinfection_mgPerLiter", size=(9, 1))],
+        [sg.Button("Submit"), sg.Button("Close")],
+        [sg.Text("If you submit multiple values in an hour, the most recent one will be used.",font=("Helvetica", 8, "italic"))]
     ]
 
     window = sg.Window("Hourly Frame", layout)
@@ -46,7 +49,7 @@ def hourly_window():
                     response = requests.post("http://localhost:8000/submit-hourly", data=data)
                     print(f"Server response: {response.json()}")
                 except Exception as e:
-                    print(f"Error spoofing hourly data: {e}")
+                    print(f"Error passing data: {e}")
                     print("Web app not running, defaulting to local export.")
 
                     helpers.local_save_data_hourly(data)

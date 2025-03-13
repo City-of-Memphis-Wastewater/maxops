@@ -495,3 +495,29 @@ operator = "Clayton Bennett"
 source = "local-gui-Python-FreeSimpleGUI"
 north_basin_1_MGD = 0.0
 
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T14:39:06"
+timestamp_intended_ISO = "2025-03-13T14:38:00"
+operator = "CB"
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 0.0
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T14:39:21"
+operator = "CB"
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 0.0
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T14:39:36"
+timestamp_intended_ISO = "2025-03-13T14:00:00"
+operator = "CB"
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 0.0
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T14:40:28"
+operator = "CB"
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 0.0
+
