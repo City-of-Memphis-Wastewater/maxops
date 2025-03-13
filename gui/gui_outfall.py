@@ -8,11 +8,11 @@ def outfall_window():
     layout = [
         [sg.Text("Operator Name:"), sg.InputText(default_text="Clayton Bennett", key="operator")],
         [sg.Text("Time of Observation:"), sg.InputText(default_text=default_time, key="timestamp")],
-        [sg.Text("Safe to Make Observation:"), sg.Combo(["","Yes", "No"], default_value="", key="safe_to_make_observation")],
-        [sg.Text("Floatable Present:"), sg.Combo(["","Yes", "No"], default_value="", key="floatable_present")],
-        [sg.Text("Scum Present:"), sg.Combo(["","Yes", "No"], default_value="", key="scum_present")],
-        [sg.Text("Foam Present:"), sg.Combo(["","Yes", "No"], default_value="", key="foam_present")],
-        [sg.Text("Oil Present:"), sg.Combo(["","Yes", "No"], default_value="", key="oil_present")],
+        [sg.Text("Safe to Make Observation:"), sg.Combo(["",True, False], default_value="", key="safe_to_make_observation")],
+        [sg.Text("Floatable Present:"), sg.Combo(["",True, False], default_value="", key="floatable_present")],
+        [sg.Text("Scum Present:"), sg.Combo(["",True, False], default_value="", key="scum_present")],
+        [sg.Text("Foam Present:"), sg.Combo(["",True, False], default_value="", key="foam_present")],
+        [sg.Text("Oil Present:"), sg.Combo(["",True, False], default_value="", key="oil_present")],
         [sg.Button("Submit"), sg.Button("Close")]
     ]
 

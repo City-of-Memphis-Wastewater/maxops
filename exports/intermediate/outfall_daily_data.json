@@ -141,5 +141,38 @@
         "oil_present": true,
         "operator": "Batch Eval",
         "source": "local-shell-Python-cmd2"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-13T13:10:59",
+        "timestamp_intended_ISO": "2025-03-13T13:10:50",
+        "safe_to_make_observation": "Yes",
+        "floatable_present": "Yes",
+        "scum_present": "Yes",
+        "foam_present": "Yes",
+        "oil_present": "Yes",
+        "operator": "Clayton Bennett",
+        "source": "local-gui-Python-FreeSimpleGUI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-13T13:13:31",
+        "timestamp_intended_ISO": "2025-03-13T13:13:21",
+        "safe_to_make_observation": true,
+        "floatable_present": true,
+        "scum_present": false,
+        "foam_present": false,
+        "oil_present": false,
+        "operator": "Clayton Bennett",
+        "source": "local-gui-Python-FreeSimpleGUI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-13T13:38:49",
+        "timestamp_intended_ISO": "2025-03-13T13:38:37",
+        "safe_to_make_observation": true,
+        "floatable_present": true,
+        "scum_present": false,
+        "foam_present": true,
+        "oil_present": false,
+        "operator": "JT",
+        "source": "web-post-Python-FastAPI"
     }
 ]

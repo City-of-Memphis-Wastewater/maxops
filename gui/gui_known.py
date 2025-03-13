@@ -24,7 +24,7 @@ def create_table_layout(data):
 
 def known_window(json_file, layout_title, window_label):
     data = load_data_from_json(json_file)
-    print(data)
+    
     # Define the layout for the PySimpleGUI window
     layout = make_layout(data, layout_title)
     # Create the window

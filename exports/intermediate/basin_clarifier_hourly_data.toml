@@ -394,3 +394,104 @@ south_ras_2_MGD = 0.0
 south_ras_3_MGD = 0.0
 south_ras_4_MGD = 0.0
 
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T11:36:26"
+timestamp_intended_ISO = "2025-03-13T11:36:10"
+operator = "CB"
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 1.0
+north_basin_3_MGD = 1.0
+north_basin_5_MGD = 1.0
+north_basin_7_MGD = 1.0
+north_basin_9_MGD = 1.0
+north_basin_11_MGD = 1.0
+north_basin_13_MGD = 1.0
+south_basin_1_MGD = 1.0
+south_basin_3_MGD = 1.0
+south_basin_5_MGD = 1.0
+south_basin_7_MGD = 1.0
+south_basin_9_MGD = 1.0
+south_basin_11_MGD = 1.0
+south_basin_13_MGD = 1.0
+north_clarifier_1_MGD = 1.0
+north_clarifier_2_MGD = 1.0
+north_clarifier_3_MGD = 1.0
+north_clarifier_4_MGD = 1.0
+south_clarifier_1_MGD = 1.0
+south_clarifier_2_MGD = 1.0
+south_clarifier_3_MGD = 1.0
+south_clarifier_4_MGD = 1.0
+north_ras_1_MGD = 1.0
+north_ras_2_MGD = 111.0
+north_ras_3_MGD = 1.0
+north_ras_4_MGD = 1.0
+south_ras_1_MGD = 1.0
+south_ras_2_MGD = 1.0
+south_ras_3_MGD = 1.0
+south_ras_4_MGD = 11.0
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T12:31:59"
+timestamp_intended_ISO = "2025-03-13T12:31:55"
+operator = "Clayton Bennett"
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 1.0
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T12:32:14"
+timestamp_intended_ISO = "2025-03-13T12:31:55"
+operator = "Clayton Bennett"
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 1.0
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T12:32:27"
+timestamp_intended_ISO = "2025-03-13T12:31:55"
+operator = "Clayton Bennett"
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 1.0
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T12:32:34"
+timestamp_intended_ISO = "2025-03-13T12:31:55"
+operator = "Clayton Bennett"
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 1.0
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T12:41:49"
+timestamp_intended_ISO = "2025-03-13T12:41:38"
+operator = "Clayton Bennett"
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 1.0
+north_basin_3_MGD = 2.0
+north_basin_5_MGD = 3.0
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T12:43:27"
+timestamp_intended_ISO = "2025-03-13T12:43:25"
+operator = "Clayton Bennett"
+source = "local-gui-Python-FreeSimpleGUI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T13:05:12"
+timestamp_intended_ISO = "2025-03-13T12:41:38"
+operator = "Clayton Bennett"
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 1.0
+north_basin_3_MGD = 2.0
+north_basin_5_MGD = 3.0
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T13:11:40"
+timestamp_intended_ISO = "2025-03-13T13:11:39"
+operator = "Clayton Bennett"
+source = "local-gui-Python-FreeSimpleGUI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-13T13:14:05"
+timestamp_intended_ISO = "2025-03-13T13:13:55"
+operator = "Clayton Bennett"
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 0.0
+

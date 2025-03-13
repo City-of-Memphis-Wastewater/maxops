@@ -221,3 +221,20 @@ def time_hour_explicit(hour_int):
         return timestamp
     else:
         return False
+    
+def is_valid_number(value):
+    """Helper function to validate numeric input."""
+    if value == "":
+        return True  # Allow empty string for None
+    try:
+        float(value)
+        return True
+    except ValueError:
+        return False
+def check_values_float(input_value):
+    if input_value == "":
+        return None
+    elif not is_valid_number(input_value):
+        raise ValueError("Non-numeric values entered.")
+    else:
+        return float(input_value)

@@ -29,15 +29,15 @@ def hourly_window():
                     "timestamp_intended_ISO": helpers.sanitize_time(values["timestamp"]),
                     "operator": values["operator"],
                     "source": "local-gui-Python-FreeSimpleGUI",
-                    "influent_flow_rate_MGD": float(values["influent_flow_rate_MGD"]),
-                    "after_wet_well_flow_rate_MGD": float(values["after_wet_well_flow_rate_MGD"]),
-                    "effluent_flow_rate_MGD": float(values["effluent_flow_rate_MGD"]),
-                    "was_flow_rate_MGD": float(values["was_flow_rate_MGD"]),
-                    "cod_predisinfection_mgPerLiter": float(values["cod_predisinfection_mgPerLiter"])                    
+                    "influent_flow_rate_MGD": helpers.check_values_float(values["influent_flow_rate_MGD"]),
+                    "after_wet_well_flow_rate_MGD": helpers.check_values_float(values["after_wet_well_flow_rate_MGD"]),
+                    "effluent_flow_rate_MGD": helpers.check_values_float(values["effluent_flow_rate_MGD"]),
+                    "was_flow_rate_MGD": helpers.check_values_float(values["was_flow_rate_MGD"]),
+                    "cod_predisinfection_mgPerLiter": helpers.check_values_float(values["cod_predisinfection_mgPerLiter"])                    
                 }
                 
             except Exception as e:
-                print(f"Error saving hourly data: {e}")
+                print(f"Error passing data: {e}")
                 sg.PopupError(f"Failed to save data: {e}")
                 data = None
 

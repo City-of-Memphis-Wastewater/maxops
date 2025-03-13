@@ -314,5 +314,82 @@
         "cod_predisinfection_mgPerLiter": null,
         "operator": "Batch Eval",
         "source": "local-shell-Python-cmd2"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-13T13:10:42",
+        "timestamp_intended_ISO": "2025-03-13T13:10:41",
+        "operator": "Clayton Bennett",
+        "source": "local-gui-Python-FreeSimpleGUI",
+        "influent_flow_rate_MGD": null,
+        "after_wet_well_flow_rate_MGD": null,
+        "effluent_flow_rate_MGD": null,
+        "was_flow_rate_MGD": null,
+        "cod_predisinfection_mgPerLiter": null
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-13T13:15:02",
+        "timestamp_intended_ISO": "2025-03-13T13:14:00",
+        "influent_flow_rate_MGD": null,
+        "after_wet_well_flow_rate_MGD": null,
+        "effluent_flow_rate_MGD": null,
+        "was_flow_rate_MGD": null,
+        "cod_predisinfection_mgPerLiter": null,
+        "operator": null,
+        "source": "web-post-Python-FastAPI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-13T13:15:15",
+        "timestamp_intended_ISO": "2025-03-13T13:15:13",
+        "influent_flow_rate_MGD": null,
+        "after_wet_well_flow_rate_MGD": null,
+        "effluent_flow_rate_MGD": null,
+        "was_flow_rate_MGD": null,
+        "cod_predisinfection_mgPerLiter": null,
+        "operator": "Clayton Bennett",
+        "source": "web-post-Python-FastAPI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-13T13:15:41",
+        "timestamp_intended_ISO": "2025-03-13T13:15:13",
+        "influent_flow_rate_MGD": null,
+        "after_wet_well_flow_rate_MGD": null,
+        "effluent_flow_rate_MGD": null,
+        "was_flow_rate_MGD": null,
+        "cod_predisinfection_mgPerLiter": null,
+        "operator": "Clayton Bennett",
+        "source": "web-post-Python-FastAPI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-13T13:16:33",
+        "timestamp_intended_ISO": "2025-03-13T13:15:13",
+        "influent_flow_rate_MGD": null,
+        "after_wet_well_flow_rate_MGD": null,
+        "effluent_flow_rate_MGD": null,
+        "was_flow_rate_MGD": null,
+        "cod_predisinfection_mgPerLiter": null,
+        "operator": "Clayton Bennett",
+        "source": "web-post-Python-FastAPI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-13T13:16:47",
+        "timestamp_intended_ISO": "2025-03-13T13:15:13",
+        "influent_flow_rate_MGD": 6.0,
+        "after_wet_well_flow_rate_MGD": null,
+        "effluent_flow_rate_MGD": null,
+        "was_flow_rate_MGD": null,
+        "cod_predisinfection_mgPerLiter": null,
+        "operator": "Clayton Bennett",
+        "source": "web-post-Python-FastAPI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-13T13:39:10",
+        "timestamp_intended_ISO": "2025-03-13T13:38:56",
+        "influent_flow_rate_MGD": 99.0,
+        "after_wet_well_flow_rate_MGD": 99.0,
+        "effluent_flow_rate_MGD": 55.0,
+        "was_flow_rate_MGD": 2.0,
+        "cod_predisinfection_mgPerLiter": 150.0,
+        "operator": "JT",
+        "source": "web-post-Python-FastAPI"
     }
 ]

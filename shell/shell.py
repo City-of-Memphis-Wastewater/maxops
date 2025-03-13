@@ -37,7 +37,7 @@ class HistoryEntry:
 
 class ShellApp(cmd2.Cmd):
     """Interactive shell for testing, spoofing, and running the web app."""
-    maxops_prettyprint = '''
+    maxops_prettytitle = '''
      __  __             ___
     |  \/  | __ ___  __/ _ \ _ __  ___
     | |\/| |/ _` \ \/ / | | | '_ \/ __|
@@ -49,7 +49,7 @@ class ShellApp(cmd2.Cmd):
     def __init__(self):
         super().__init__()
         self.prompt = "maxops> "
-        self.intro = r"{}".format(self.maxops_prettyprint) + \
+        self.intro = r"{}".format(self.maxops_prettytitle) + \
         '''
         Welcome to the MaxOps Shell.
         Type "help" to see available commands.
@@ -131,6 +131,18 @@ class ShellApp(cmd2.Cmd):
         except Exception as e:
             self.perror(f"Error saving command to history: {e}")
         return stop
+    
+    # === Command: Clear ===
+    def do_clear(self,line):
+        try:
+            os.system("cls")
+        except:
+            os.system("clear")
+
+    # === Command: About ===
+    def do_about(self,line):
+        "Show the MaxOps prettty title"
+        print(self.maxops_prettytitle)
     
     # === Command: Run Web App ===
     run_webapp_parser = argparse.ArgumentParser(description="Run the FastAPI web app.")
