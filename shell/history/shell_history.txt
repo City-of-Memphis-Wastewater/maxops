@@ -687,3 +687,7 @@ quit
 gui
 gui
 quit
+gui
+history
+batch basin_clarifier_flows.txt
+quit
