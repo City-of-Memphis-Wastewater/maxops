@@ -7,11 +7,11 @@ def hourly_window():
     layout = [
         [sg.Text("Operator Name:"), sg.InputText(default_text="Clayton Bennett", key="operator")],
         [sg.Text("Timestamp (ISO Format):"), sg.InputText(default_text=default_time, key="timestamp")],
-        [sg.Text("Influent Flow Rate (MGD):"), sg.InputText(default_text="0.0", key="influent_flow_rate_MGD")],
-        [sg.Text("After Wet Well Flow Rate (MGD):"), sg.InputText(default_text="0.0", key="after_wet_well_flow_rate_MGD")],
-        [sg.Text("Effluent Flow Rate (MGD):"), sg.InputText(default_text="0.0", key="effluent_flow_rate_MGD")],
-        [sg.Text("WAS Flow Rate (MGD):"), sg.InputText(default_text="0.0", key="was_flow_rate_MGD")],
-        [sg.Text("COD Pre-Disinfection (mg/Liter):"),sg.InputText(default_text="0.0", key="cod_predisinfection_mgPerLiter")],
+        [sg.Text("Influent Flow Rate (MGD):"), sg.InputText(default_text="", key="influent_flow_rate_MGD")],
+        [sg.Text("After Wet Well Flow Rate (MGD):"), sg.InputText(default_text="", key="after_wet_well_flow_rate_MGD")],
+        [sg.Text("Effluent Flow Rate (MGD):"), sg.InputText(default_text="", key="effluent_flow_rate_MGD")],
+        [sg.Text("WAS Flow Rate (MGD):"), sg.InputText(default_text="", key="was_flow_rate_MGD")],
+        [sg.Text("COD Pre-Disinfection (mg/Liter):"),sg.InputText(default_text="", key="cod_predisinfection_mgPerLiter")],
         [sg.Button("Submit"), sg.Button("Close")]
     ]
 
@@ -27,13 +27,13 @@ def hourly_window():
                 data = {
                     "timestamp_entry_ISO": helpers.nowtime(),
                     "timestamp_intended_ISO": helpers.sanitize_time(values["timestamp"]),
+                    "operator": values["operator"],
+                    "source": "local-gui-Python-FreeSimpleGUI",
                     "influent_flow_rate_MGD": float(values["influent_flow_rate_MGD"]),
                     "after_wet_well_flow_rate_MGD": float(values["after_wet_well_flow_rate_MGD"]),
                     "effluent_flow_rate_MGD": float(values["effluent_flow_rate_MGD"]),
                     "was_flow_rate_MGD": float(values["was_flow_rate_MGD"]),
-                    "cod_predisinfection_mgPerLiter": float(values["cod_predisinfection_mgPerLiter"]),
-                    "operator": values["operator"],
-                    "source": "local-gui-Python-FreeSimpleGUI"
+                    "cod_predisinfection_mgPerLiter": float(values["cod_predisinfection_mgPerLiter"])                    
                 }
                 
             except Exception as e:

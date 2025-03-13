@@ -24,6 +24,7 @@ print(f"dir(wof) = {dir(wof)}")
 import FreeSimpleGUI as sg
 from gui.gui_outfall import outfall_window
 from gui.gui_hourly import hourly_window
+from gui.gui_basins_clarifiers_hourly import hourly_basin_clarifiers_window
 import os
 from gui.gui_known import known_window
 
@@ -40,9 +41,10 @@ def menu_window():
     layout = [
         [sg.Button("Outfall", key="-OUTFALL-"), sg.Button("Outfall History", key="-OUTFALL-KNOWN-")],
         [sg.Button("Hourly", key="-HOURLY-"), sg.Button("Hourly History", key="-HOURLY-KNOWN-")], 
+        [sg.Button("Hourly Basins and Clarifiers", key="-BASINS-CLARIFIERS-"), sg.Button("Hourly Basins Clarifers History", key="-BASINS-CLARIFIERS-KNOWN-")], 
         [sg.Button("Exit", key="-EXIT-")]
     ]
-    window = sg.Window("Main Menu", layout)
+    window = sg.Window("MaxOps Menu", layout)
 
     while True:
         event, _ = window.read()
@@ -52,16 +54,34 @@ def menu_window():
             outfall_window()
         if event == "-HOURLY-":
             hourly_window()
+        if event == "-BASINS-CLARIFIERS-":
+            hourly_basin_clarifiers_window()
         if event == "-OUTFALL-KNOWN-":
             json_file = os.path.join("exports","intermediate" ,"outfall_daily_data.json")
             layout_title = "Daily Outfall Data Submissions"
             window_label = "Outfall Data Viewer"
-            known_window(json_file, layout_title, window_label)
+            try:
+                known_window(json_file, layout_title, window_label)
+            except Exception as e:
+                print(f"Error launching {window_label} data: {e}")
+
         if event == "-HOURLY-KNOWN-":
             json_file = os.path.join("exports","intermediate" ,"hourly_data.json")
             layout_title = "Hourly Data Submissions"
             window_label = "Hourly Data Viewer"
-            known_window(json_file, layout_title, window_label)
+            try:
+                known_window(json_file, layout_title, window_label)
+            except Exception as e:
+                print(f"Error launching {window_label} data: {e}")
+
+        if event == "-BASINS-CLARIFIERS-KNOWN-":
+            json_file = os.path.join("exports","intermediate" ,"basin_clarifier_hourly_data.json")
+            layout_title = "Hourly Basin and Clarifier Data Submissions"
+            window_label = "Hourly Basin and Clarifier Data Viewer"
+            try:
+                known_window(json_file, layout_title, window_label)
+            except Exception as e:
+                print(f"Error launching {window_label} data: {e}")
 
     window.close()
 

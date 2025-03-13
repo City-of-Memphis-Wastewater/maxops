@@ -151,3 +151,29 @@ cod_predisinfection_mgPerLiter = 0.0
 operator = "Clayton Bennett"
 source = "web-post-Python-FastAPI"
 
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T20:35:54"
+timestamp_intended_ISO = "2025-03-12T20:35:37"
+influent_flow_rate_MGD = 2.0
+after_wet_well_flow_rate_MGD = 2.0
+effluent_flow_rate_MGD = 2.0
+was_flow_rate_MGD = 2.0
+cod_predisinfection_mgPerLiter = 2.0
+operator = "Clayton Bennett"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T21:54:16"
+timestamp_intended_ISO = "2025-03-12T21:53:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T21:54:21"
+timestamp_intended_ISO = "2025-03-12T21:54:00"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-12T21:54:27"
+timestamp_intended_ISO = "2025-03-12T21:54:00"
+source = "web-post-Python-FastAPI"
+

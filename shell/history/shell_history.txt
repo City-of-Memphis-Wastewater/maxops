@@ -654,3 +654,36 @@ batch basin_clarifier_flows.txt
 batch basin_clarifier_flows.txt
 batch basin_clarifier_flows.txt
 quit
+quit
+gui
+gui
+quit
+quit
+quit
+quit
+gui
+quit
+quit\
+quit
+gui
+quit
+gui
+quit
+gui
+quit
+gui
+gui
+quit\
+quit
+quit
+quit
+gui
+quit
+gui
+quit]
+quit
+gui
+quit
+gui
+gui
+quit

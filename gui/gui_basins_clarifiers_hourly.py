@@ -1,0 +1,135 @@
+import requests
+import FreeSimpleGUI as sg
+import app.utils.helpers as helpers
+
+def hourly_basin_clarifiers_window():
+    default_time = helpers.nowtime()
+    screen_width, screen_height = sg.Window.get_screen_size()
+    layout = [
+    [sg.Text("Operator Name:"), sg.InputText(default_text="Clayton Bennett", key="operator")],
+    [sg.Text("Timestamp (ISO Format):"), sg.InputText(default_text=default_time, key="timestamp")],
+    
+    [
+        sg.Column([
+            [sg.Text("North Basin (MGD)")],
+            [sg.Text("1:"), sg.InputText(default_text="", key="north_basin_1_MGD", size=(5, 1))],
+            [sg.Text("3:"), sg.InputText(default_text="", key="north_basin_3_MGD", size=(5, 1))],
+            [sg.Text("5:"), sg.InputText(default_text="", key="north_basin_5_MGD", size=(5, 1))],
+            [sg.Text("7:"), sg.InputText(default_text="", key="north_basin_7_MGD", size=(5, 1))],
+            [sg.Text("9:"), sg.InputText(default_text="", key="north_basin_9_MGD", size=(5, 1))],
+            [sg.Text("11:"), sg.InputText(default_text="", key="north_basin_11_MGD", size=(5, 1))],
+            [sg.Text("13:"), sg.InputText(default_text="", key="north_basin_13_MGD", size=(5, 1))]
+        ], justification='left',vertical_alignment='top'),
+        sg.Column([
+            [sg.Text("South Basin (MGD)")],
+            [sg.Text("1:"), sg.InputText(default_text="", key="south_basin_1_MGD", size=(5, 1))],
+            [sg.Text("3:"), sg.InputText(default_text="", key="south_basin_3_MGD", size=(5, 1))],
+            [sg.Text("5:"), sg.InputText(default_text="", key="south_basin_5_MGD", size=(5, 1))],
+            [sg.Text("7:"), sg.InputText(default_text="", key="south_basin_7_MGD", size=(5, 1))],
+            [sg.Text("9:"), sg.InputText(default_text="", key="south_basin_9_MGD", size=(5, 1))],
+            [sg.Text("11:"), sg.InputText(default_text="", key="south_basin_11_MGD", size=(5, 1))],
+            [sg.Text("13:"), sg.InputText(default_text="", key="south_basin_13_MGD", size=(5, 1))]
+        ], justification='left',vertical_alignment='top'),
+        sg.Column([
+            [sg.Text("North Clarifier (MGD)")],
+            [sg.Text("1:"), sg.InputText(default_text="", key="north_clarifier_1_MGD", size=(5, 1))],
+            [sg.Text("2:"), sg.InputText(default_text="", key="north_clarifier_2_MGD", size=(5, 1))],
+            [sg.Text("3:"), sg.InputText(default_text="", key="north_clarifier_3_MGD", size=(5, 1))],
+            [sg.Text("4:"), sg.InputText(default_text="", key="north_clarifier_4_MGD", size=(5, 1))]
+        ], justification='left',vertical_alignment='top'),
+        sg.Column([
+            [sg.Text("South Clarifier (MGD)")],
+            [sg.Text("1:"), sg.InputText(default_text="", key="south_clarifier_1_MGD", size=(5, 1))],
+            [sg.Text("2:"), sg.InputText(default_text="", key="south_clarifier_2_MGD", size=(5, 1))],
+            [sg.Text("3:"), sg.InputText(default_text="", key="south_clarifier_3_MGD", size=(5, 1))],
+            [sg.Text("4:"), sg.InputText(default_text="", key="south_clarifier_4_MGD", size=(5, 1))]
+        ], justification='left',vertical_alignment='top'),
+        sg.Column([
+            [sg.Text("North RAS (MGD)")],
+            [sg.Text("1:"), sg.InputText(default_text="", key="north_ras_1_MGD", size=(5, 1))],
+            [sg.Text("2:"), sg.InputText(default_text="", key="north_ras_2_MGD", size=(5, 1))],
+            [sg.Text("3:"), sg.InputText(default_text="", key="north_ras_3_MGD", size=(5, 1))],
+            [sg.Text("4:"), sg.InputText(default_text="", key="north_ras_4_MGD", size=(5, 1))]
+        ], justification='left',vertical_alignment='top'),
+        sg.Column([
+            [sg.Text("South RAS (MGD)")],
+            [sg.Text("1:"), sg.InputText(default_text="", key="south_ras_1_MGD", size=(5, 1))],
+            [sg.Text("2:"), sg.InputText(default_text="", key="south_ras_2_MGD", size=(5, 1))],
+            [sg.Text("3:"), sg.InputText(default_text="", key="south_ras_3_MGD", size=(5, 1))],
+            [sg.Text("4:"), sg.InputText(default_text="", key="south_ras_4_MGD", size=(5, 1))]
+        ], justification='left',vertical_alignment='top')
+    ],
+    [sg.Button("Submit"), sg.Button("Close")],
+    ]
+
+    window = sg.Window("Hourly Frame", layout)
+
+    while True:
+        event, values = window.read()
+        if event == sg.WINDOW_CLOSED or event == "Close":
+            break
+        if event == "Submit":
+            try:
+                # Sanitize and process input values
+                data = {
+                    "timestamp_entry_ISO": helpers.nowtime(),
+                    "timestamp_intended_ISO": helpers.sanitize_time(values["timestamp"]),
+                    "operator": values["operator"],
+                    "source": "local-gui-Python-FreeSimpleGUI",
+                    "north_basin_1_MGD": float(values["north_basin_1_MGD"]),
+                    "north_basin_3_MGD": float(values["north_basin_3_MGD"]),
+                    "north_basin_5_MGD": float(values["north_basin_5_MGD"]),
+                    "north_basin_7_MGD": float(values["north_basin_7_MGD"]),
+                    "north_basin_9_MGD": float(values["north_basin_9_MGD"]),
+                    "north_basin_11_MGD": float(values["north_basin_11_MGD"]),
+                    "north_basin_13_MGD": float(values["north_basin_13_MGD"]),
+
+                    "south_basin_1_MGD": float(values["south_basin_1_MGD"]),
+                    "south_basin_3_MGD": float(values["south_basin_3_MGD"]),
+                    "south_basin_5_MGD": float(values["south_basin_5_MGD"]),
+                    "south_basin_7_MGD": float(values["south_basin_7_MGD"]),
+                    "south_basin_9_MGD": float(values["south_basin_9_MGD"]),
+                    "south_basin_11_MGD": float(values["south_basin_11_MGD"]),
+                    "south_basin_13_MGD": float(values["south_basin_13_MGD"]),
+
+                    "north_clarifier_1_MGD": float(values["north_clarifier_1_MGD"]),
+                    "north_clarifier_2_MGD": float(values["north_clarifier_2_MGD"]),
+                    "north_clarifier_3_MGD": float(values["north_clarifier_3_MGD"]),
+                    "north_clarifier_4_MGD": float(values["north_clarifier_4_MGD"]),
+
+                    "south_clarifier_1_MGD": float(values["south_clarifier_1_MGD"]),
+                    "south_clarifier_2_MGD": float(values["south_clarifier_2_MGD"]),
+                    "south_clarifier_3_MGD": float(values["south_clarifier_3_MGD"]),
+                    "south_clarifier_4_MGD": float(values["south_clarifier_4_MGD"]),
+
+                    "north_ras_1_MGD": float(values["north_ras_1_MGD"]),
+                    "north_ras_2_MGD": float(values["north_ras_2_MGD"]),
+                    "north_ras_3_MGD": float(values["north_ras_3_MGD"]),
+                    "north_ras_4_MGD": float(values["north_ras_4_MGD"]),
+
+                    "south_ras_1_MGD": float(values["south_ras_1_MGD"]),
+                    "south_ras_2_MGD": float(values["south_ras_2_MGD"]),
+                    "south_ras_3_MGD": float(values["south_ras_3_MGD"]),
+                    "south_ras_4_MGD": float(values["south_ras_4_MGD"])                 
+                }
+                
+            except Exception as e:
+                print(f"Error saving hourly data: {e}")
+                sg.PopupError(f"Failed to save data: {e}")
+                data = None
+
+            if data is not None:
+                try:
+                    response = requests.post("http://localhost:8000/submit-basin-clarifier-hourly", data=data)
+                    print(f"Server response: {response.json()}")
+                except Exception as e:
+                    print(f"Error spoofing hourly data: {e}")
+                    print("Web app not running, defaulting to local export.")
+
+                    helpers.local_save_data_hourly(data)
+                    sg.Popup("Hourly data saved successfully!")
+            
+    window.close()
+
+if __name__ == "__main__":
+    hourly_basin_clarifiers_window()
