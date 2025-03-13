@@ -691,3 +691,58 @@ gui
 history
 batch basin_clarifier_flows.txt
 quit
+run_webapp
+gui
+help
+quit
+quit
+quit
+quit
+quit
+quit
+quit
+quit
+quit
+help
+help
+batch
+test_recent_hourly
+help spoof_basin_clarifier_flows
+quit
+help
+help -v
+help spoof_basin_clarifier_flows
+quit
+help spoof_basin_clarifier_flows
+quit
+help spoof_basin_clarifier_flows
+batch basin_clarifier_flows
+batch basin_clarifier_flows.txt
+batch spoof_basin_clarifier_flows.txt
+batch spoof_hourly.txt
+batch spoof_hourly.txt
+batch spoof_hourly.txt
+batch spoof_outfall_daily.txt
+batch spoof_basin_clarifier_flows.txt
+quit
+batch spoof_outfall_daily.txt
+quit
+batch spoof_outfall_daily.txt
+quit
+batch spoof_outfall_daily.txt
+batch spoof_basin_clarifier_flows.txt
+quit
+batch spoof_basin_clarifier_flows.txt
+batch spoof_outfall_daily.txt
+quit
+batch spoof_outfall_daily.txt
+batch spoof_basin_clarifier_flows.txt
+batch -l
+quit
+batch -l
+batch -f "dungeon.txt"
+batch -f dungeon.txt
+batch -f dungeon.txteval.txt
+batch -f eval.txt
+batch -f spoof_hourly.txt
+quit

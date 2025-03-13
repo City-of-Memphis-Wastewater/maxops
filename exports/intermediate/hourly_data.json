@@ -292,5 +292,27 @@
         "cod_predisinfection_mgPerLiter": null,
         "operator": null,
         "source": "web-post-Python-FastAPI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-13T08:50:14",
+        "timestamp_intended_ISO": "2025-03-13T08:50:14",
+        "influent_flow_rate_MGD": 67.0,
+        "after_wet_well_flow_rate_MGD": 66.0,
+        "effluent_flow_rate_MGD": 63.0,
+        "was_flow_rate_MGD": 1.5,
+        "cod_predisinfection_mgPerLiter": null,
+        "operator": "Clayton Bennett",
+        "source": "local-shell-Python-cmd2"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-13T08:50:18",
+        "timestamp_intended_ISO": "2025-03-13T13:00:00",
+        "influent_flow_rate_MGD": 100.0,
+        "after_wet_well_flow_rate_MGD": 99.0,
+        "effluent_flow_rate_MGD": 63.0,
+        "was_flow_rate_MGD": 1.5,
+        "cod_predisinfection_mgPerLiter": null,
+        "operator": "Batch Eval",
+        "source": "local-shell-Python-cmd2"
     }
 ]

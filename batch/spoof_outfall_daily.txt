@@ -1,0 +1,2 @@
+spoof_outfall_daily -t 15 -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Clayton Bennett"
+spoof_outfall_daily -t now -safe 1 -float 1 -scum 0 -foam 0 -oil 1 -op "Batch Eval"

@@ -22,7 +22,7 @@ def process_batch(batch_file_name, shell_instance):
             command = ""
             for line in batch_file:
 
-                if not(line.endswith('\n')) and command =="":
+                if not(line.strip().endswith('+')) and command =="":
                     #print("c0")
                     command = line.strip()
                     # Skip empty lines and comments (lines starting with #)
@@ -32,12 +32,12 @@ def process_batch(batch_file_name, shell_instance):
                         command = ""
                     elif not command.startswith("#"):
                         command = ""
-                elif line.endswith('\n'):
+                elif line.strip().endswith('+'):
                     #print("c1")
                     wait = True
-                    command = command+" "+line.strip().replace("\\n","").replace("\n","")
+                    command = command+" "+line.strip().replace("+","")
                     #print(f"command = {repr(command)}")
-                elif not(line.endswith('\n')) and command !="":
+                elif not(line.strip().endswith('+')) and command !="":
                     #print("c2")
                     command = command+" "+line.strip()
                     if command and not command.startswith("#"):

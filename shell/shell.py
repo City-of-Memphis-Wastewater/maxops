@@ -11,6 +11,7 @@ import ast
 import operator
 import readline
 import inspect
+#from directories import Directories
 
 from shell.query import run_query  # Import the tutorial function
 from shell.tutorial import run_tutorial  # Import the tutorial function
@@ -36,10 +37,25 @@ class HistoryEntry:
 
 class ShellApp(cmd2.Cmd):
     """Interactive shell for testing, spoofing, and running the web app."""
+    maxops_prettyprint = '''
+     __  __             ___
+    |  \/  | __ ___  __/ _ \ _ __  ___
+    | |\/| |/ _` \ \/ / | | | '_ \/ __|
+    | |  | | (_| |>  <| |_| | |_) \__ \\
+    |_|  |_|\__,_/_/\_\\____/| .__/|___/
+                            |_|
 
+    '''
     def __init__(self):
         super().__init__()
         self.prompt = "maxops> "
+        self.intro = r"{}".format(self.maxops_prettyprint) + \
+        '''
+        Welcome to the MaxOps Shell.
+        Type "help" to see available commands.
+        Type "gui" to launch the graphical user interface.
+        Type "run_webapp" to launch the web app.
+        '''
         self.vars = {}
         self.modules = {}
         self.context = {'self': self,
@@ -185,14 +201,10 @@ class ShellApp(cmd2.Cmd):
             data = None
         self.post_data_or_save_locally(html_template,data,local_save_function,source_description)
 
-
-
-
     # === Command: copy Spoof Hourly Data ===
-    basin_clarifier_flows_parser = argparse.ArgumentParser(description="Spoof hourly data for testing.")
+    basin_clarifier_flows_parser = argparse.ArgumentParser(description="Spoof hourly data for testing.\nRun this command: batch basin_clarifier_flows.txt to test / save time.")
     basin_clarifier_flows_parser.add_argument("-t","--timestamp", type=str, default=None, help="Timestamp in ISO format, e.g., 2025-03-05T08:00:00. It you use '-t now', or don't include one, the ISO timestamp for now will be generated. If you use '-t 13', the time will be submitted as today at 1 PM,  for example; this input must be an integrer.")
     basin_clarifier_flows_parser.add_argument("-op","--operator", type=str, default=None, help="Operator indentifier.")
-    
     basin_clarifier_flows_parser.add_argument("-nb1","--north_basin_1_MGD", type=float, default=None, help="Flow (MGD)")
     basin_clarifier_flows_parser.add_argument("-nb3","--north_basin_3_MGD", type=float, default=None, help="Flow (MGD)")
     basin_clarifier_flows_parser.add_argument("-nb5","--north_basin_5_MGD", type=float, default=None, help="Flow (MGD)")
@@ -229,10 +241,12 @@ class ShellApp(cmd2.Cmd):
     basin_clarifier_flows_parser.add_argument("-sr3","--south_ras_3_MGD", type=float, default=None, help="Flow (MGD)")
     basin_clarifier_flows_parser.add_argument("-sr4","--south_ras_4_MGD", type=float, default=None, help="Flow (MGD)")
 
-
     @cmd2.with_argparser(basin_clarifier_flows_parser)
     def do_spoof_basin_clarifier_flows(self, args):
-        """Spoof hourly data and send it to the API."""
+        """
+        Spoof basin and clarifier hourly data and send it to the API.
+        """
+        self.help = "Run this command: batch spoof_basin_clarifier_flows.txt to test / save time."
         func_name = inspect.currentframe().f_code.co_name
         source_description = "basin_clarifier_hourly"
         local_save_function = helpers.local_save_data_basin_clarifier_hourly
@@ -383,13 +397,22 @@ class ShellApp(cmd2.Cmd):
     
     # === Command: Execute Batch Script ===
     # Add batch command
+    batch_parser = argparse.ArgumentParser(description="Batch process files in /batch/.")
+    batch_parser.add_argument("-l","--list", type=bool, nargs="?", default=False, const=True, help="Provide flag to see list of batch files in /batch/")
+    batch_parser.add_argument("-f","--file", type=str, help="Provide entire path or assume /batch/")
+    @cmd2.with_argparser(batch_parser)
     def do_batch(self, args):
         """Execute commands from a batch script located in the batch directory."""
-        batch_file_name = args.strip()
-        if not batch_file_name:
-            print("Usage: batch <batch_file_name>")
-        else:
-            process_batch(batch_file_name, self)
+        if args.list is True:
+            batchpath = "./batch/"
+            onlyfiles = [f for f in os.listdir(batchpath) if os.path.isfile(os.path.join(batchpath, f))]
+            print(onlyfiles)
+        elif args.file is not None:
+            batch_file_name = args.file
+            if not batch_file_name:
+                print("Usage: batch <batch_file_name>")
+            else:
+                process_batch(batch_file_name, self)
             
     # === Command: Test Recent Hourly Data ===
     test_recent_hourly_parser = argparse.ArgumentParser(description="Test the /api/recent-hourly endpoint.")
@@ -619,5 +642,6 @@ class ShellApp(cmd2.Cmd):
         menu_window() 
 
 if __name__ == "__main__":
+
     app = ShellApp()
     app.cmdloop()
