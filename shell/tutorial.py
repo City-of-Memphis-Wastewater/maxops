@@ -42,7 +42,7 @@ The following PowerShell scripts are available:
     print("\nStep 3: Explore the web app's functionality.")
     print("""
 The web app allows you to:
-- Submit hourly data through a form at /hourly-form.
+- Submit hourly data through a form at /flow-and-cod-hourly-form.
 - Submit daily summaries through a form at /daily-form.
 - View recent submissions using the /api/recent-hourly endpoint.
 - Manage exported files, generated in the exports/intermediate directory.

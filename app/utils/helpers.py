@@ -12,10 +12,10 @@ def ensure_dir():
     if not Directories.EXPORT_DIR.exists():
         Directories.EXPORT_DIR.mkdir(parents=True)
 
-def local_save_data_hourly(data: dict):
-    save_data_to_csv(data, file_path = Directories.EXPORT_DIR / "hourly_data.csv")
-    save_data_to_json(data, file_path = Directories.EXPORT_DIR / "hourly_data.json")
-    save_data_to_toml(data, file_path = Directories.EXPORT_DIR / "hourly_data.toml")
+def local_save_data_overview_hourly(data: dict):
+    save_data_to_csv(data, file_path = Directories.EXPORT_DIR / "flows_and_cod_hourly_data.csv")
+    save_data_to_json(data, file_path = Directories.EXPORT_DIR / "flows_and_cod_hourly_data.json")
+    save_data_to_toml(data, file_path = Directories.EXPORT_DIR / "flows_and_cod_hourly_data.toml")
 
 def local_save_data_daily(data: dict):
     save_data_to_csv(data, file_path = Directories.EXPORT_DIR / "daily_data.csv")
@@ -115,9 +115,9 @@ def save_data_to_toml(data: dict, file_path):
             existing_data = toml.load(tomlfile)
 
     # Add the new entry to the existing data
-    if "hourly_data" not in existing_data:
-        existing_data["hourly_data"] = []
-    existing_data["hourly_data"].append(data)
+    if "flows_and_cod_hourly_data" not in existing_data:
+        existing_data["flows_and_cod_hourly_data"] = []
+    existing_data["flows_and_cod_hourly_data"].append(data)
 
     # Save the updated data back to the TOML file
     with open(file_path, mode="w", encoding="utf-8") as tomlfile:
@@ -168,11 +168,21 @@ def nowtime():
     now_time = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
     return now_time
 
+def expected_length(timestamp):
+    long_enogh_to_be_in_ISO_time = (len(timestamp)>=16) # "%Y-%m-%dT%H:%M:%S" or "%Y-%m-%dT%H:%M"
+    short_enough_to_be_an_hour = (len(timestamp)<=2) # 14
+    return  long_enogh_to_be_in_ISO_time or short_enough_to_be_an_hour
+
+
+def special_word(timestamp):
+    return timestamp.strip()=="now"
+
 # === Command: Sanitize Time ===
 def sanitize_time(timestamp):
     print(f"timestamp = {timestamp}")
+    print(f"bool = {timestamp=='now'}")
     # Check and handle the timestamp, if it has minutes but not seconds
-    if len(timestamp)<16 and len(timestamp)>2:
+    if not(expected_length(timestamp)) and not(special_word(timestamp)):
         raise ValueError("Invalid time value.")
     try:
         # Attempt to parse the timestamp with the "%Y-%m-%dT%H:%M" format (up to minutes)

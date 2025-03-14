@@ -903,3 +903,73 @@ ingest
 quit
 ingest
 quit
+ibgest
+quit
+quit
+quit
+quit
+quit
+quit
+ingest
+ingest
+quit
+ingest
+quit
+quit
+quit
+quit
+quit
+ingest
+quit
+ingest
+ingest
+quit
+quit
+ingest
+quit
+ingest
+history
+batch -f basin_clarifier_flows.txt
+batch -f spoof_basin_clarifier_flows.txt
+batch -f spoof_basin_clarifier_flows.txt
+quit
+batch -f spoof_basin_clarifier_flows.txt
+quit
+batch -f spoof_basin_clarifier_flows.txt
+quit
+batch -f spoof_basin_clarifier_flows.txt
+quit
+batch -f spoof_basin_clarifier_flows.txt
+quit
+batch -f spoof_basin_clarifier_flows.txt
+quit
+batch -f spoof_basin_clarifier_flows.txt
+quit
+batch -f spoof_basin_clarifier_flows.txt
+quit
+ingest
+ingest
+gui
+run_webapp
+gui
+quit
+quit
+quit
+ingest
+gui
+quit
+ingest
+gui
+quit
+gui
+quit
+ingest
+gui
+ingest
+quit
+quit
+quit\
+quit
+clear
+ingest
+quit

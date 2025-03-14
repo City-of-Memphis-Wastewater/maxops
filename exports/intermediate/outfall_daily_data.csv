@@ -27,3 +27,9 @@ timestamp_entry_ISO,timestamp_intended_ISO,north_basin_1_MGD,north_basin_3_MGD,n
 2025-03-13T14:55:33,2025-03-13T14:55:33,True,True,False,False,True,Batch Eval,web-post-Python-FastAPI
 2025-03-13T15:17:37,2025-03-13T15:17:37,True,True,False,False,True,Batch Eval,local-shell-Python-cmd2
 2025-03-13T15:22:31,2025-03-13T15:22:31,True,True,False,False,True,Batch Eval,local-shell-Python-cmd2
+2025-03-14T13:13:13,2025-03-14T13:13:01,True,False,False,False,True,HN,local-gui-Python-FreeSimpleGUI
+2025-03-14T13:13:18,2025-03-14T13:13:01,True,False,False,False,True,HN,local-gui-Python-FreeSimpleGUI
+2025-03-14T13:18:16,2025-03-14T11:00:00,True,True,True,True,True,SB,web-post-Python-FastAPI
+2025-03-14T13:18:43,2025-03-14T11:00:00,True,True,True,True,True,SB,local-gui-Python-FreeSimpleGUI
+2025-03-14T13:36:56,2025-03-14T11:00:00,True,True,True,True,True,SB,local-gui-Python-FreeSimpleGUI
+2025-03-14T18:00:13,2025-03-14T17:59:59,True,False,True,False,True,CB,local-gui-Python-FreeSimpleGUI

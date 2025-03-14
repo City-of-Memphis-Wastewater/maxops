@@ -1,0 +1,21 @@
+[[flows_and_cod_hourly_data]]
+timestamp_entry_ISO = "2025-03-14T17:52:21"
+timestamp_intended_ISO = "2025-03-14T17:52:16"
+operator = "CB"
+source = "local-gui-Python-FreeSimpleGUI"
+influent_flow_rate_MGD = 1.0
+
+[[flows_and_cod_hourly_data]]
+timestamp_entry_ISO = "2025-03-14T17:53:23"
+timestamp_intended_ISO = "2025-03-14T17:53:20"
+operator = ""
+source = "local-gui-Python-FreeSimpleGUI"
+influent_flow_rate_MGD = 1.0
+
+[[flows_and_cod_hourly_data]]
+timestamp_entry_ISO = "2025-03-14T17:53:49"
+timestamp_intended_ISO = "2025-03-14T17:53:47"
+operator = ""
+source = "local-gui-Python-FreeSimpleGUI"
+influent_flow_rate_MGD = 1.0
+

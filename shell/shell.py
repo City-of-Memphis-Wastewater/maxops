@@ -177,23 +177,23 @@ class ShellApp(cmd2.Cmd):
                 print("Web app not running, defaulting to local export.")
                 local_save_function(data)
 
-    # === Command: Spoof Hourly Data ===
-    spoof_hourly_parser = argparse.ArgumentParser(description="Spoof hourly data for testing.")
-    spoof_hourly_parser.add_argument("-t","--timestamp", type=str, default=None, help="Timestamp in ISO format, e.g., 2025-03-05T08:00:00. It you use '-t now', or don't include one, the ISO timestamp for now will be generated. If you use '-t 13', the time will be submitted as today at 1 PM,  for example; this input must be an integrer.")
-    spoof_hourly_parser.add_argument("-i","--influent_flow_rate_MGD", type=float, default=None, help="Hourly influent flow.")
-    spoof_hourly_parser.add_argument("-a","--after_wet_well_flow_rate_MGD", type=float, default=None, help="Hourly after-wet-well flow.")
-    spoof_hourly_parser.add_argument("-e","--effluent_flow_rate_MGD", type=float, default=None, help="Hourly effluent flow.")
-    #spoof_hourly_parser.add_argument("-r","--ras_flow_rate_MGD", type=float, default=None, help="Hourly RAS flow.") # calculated from entries in clarifier page
-    spoof_hourly_parser.add_argument("-w","--was_flow_rate_MGD", type=float, default=None, help="Hourly WAS flow.")
-    spoof_hourly_parser.add_argument("-c","--cod_predisinfection_mgPerLiter", type=float, default=None, help="Hourly prefinal COD (chemical oxygen demand) concentration (mgPerLiter) (~150).")
-    spoof_hourly_parser.add_argument("-op","--operator", type=str, default=None, help="Operator indentifier.")
-    #spoof_hourly_parser.add_argument("-u","--underflow_rate_MGD", type=float, default=None, help="Hourly influent flow.") # calculated from entries in clarifier page
-    @cmd2.with_argparser(spoof_hourly_parser)
-    def do_spoof_hourly(self, args):
-        """Spoof hourly data and send it to the API."""
+    # === Command: Spoof Overview (Flows and COD) Hourly Data ===
+    overview_hourly_parser = argparse.ArgumentParser(description="Spoof hourly data for testing.")
+    overview_hourly_parser.add_argument("-t","--timestamp", type=str, default=None, help="Timestamp in ISO format, e.g., 2025-03-05T08:00:00. It you use '-t now', or don't include one, the ISO timestamp for now will be generated. If you use '-t 13', the time will be submitted as today at 1 PM,  for example; this input must be an integrer.")
+    overview_hourly_parser.add_argument("-i","--influent_flow_rate_MGD", type=float, default=None, help="Hourly influent flow.")
+    overview_hourly_parser.add_argument("-a","--after_wet_well_flow_rate_MGD", type=float, default=None, help="Hourly after-wet-well flow.")
+    overview_hourly_parser.add_argument("-e","--effluent_flow_rate_MGD", type=float, default=None, help="Hourly effluent flow.")
+    #overview_hourly_parser.add_argument("-r","--ras_flow_rate_MGD", type=float, default=None, help="Hourly RAS flow.") # calculated from entries in clarifier page
+    overview_hourly_parser.add_argument("-w","--was_flow_rate_MGD", type=float, default=None, help="Hourly WAS flow.")
+    overview_hourly_parser.add_argument("-c","--cod_predisinfection_mgPerLiter", type=float, default=None, help="Hourly prefinal COD (chemical oxygen demand) concentration (mgPerLiter) (~150).")
+    overview_hourly_parser.add_argument("-op","--operator", type=str, default=None, help="Operator indentifier.")
+    #overview_hourly_parser.add_argument("-u","--underflow_rate_MGD", type=float, default=None, help="Hourly influent flow.") # calculated from entries in clarifier page
+    @cmd2.with_argparser(overview_hourly_parser)
+    def do_overview_hourly(self, args):
+        """Spoof Overview hourly data and send it to the API."""
         func_name = inspect.currentframe().f_code.co_name
-        source_description = "hourly"
-        local_save_function = helpers.local_save_data_hourly
+        source_description = "overview hourly"
+        local_save_function = helpers.local_save_data_overview_hourly
         html_template = "submit-hourly"
         self.print_help_if_no_args(args,func_name) # Print help if no args are provided
         """Capure args as data dictionary."""
@@ -657,7 +657,7 @@ class ShellApp(cmd2.Cmd):
 
     def do_ingest(self,args):
         "Ingest data from predefined filename set in ingestion.py."
-        ingestion.run_now()
+        ingestion.IntermediateExport.run_now()
 
 
 

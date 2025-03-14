@@ -1,0 +1,4 @@
+timestamp_entry_ISO,timestamp_intended_ISO,operator,source,influent_flow_rate_MGD,after_wet_well_flow_rate_MGD,effluent_flow_rate_MGD,was_flow_rate_MGD,cod_predisinfection_mgPerLiter
+2025-03-14T17:52:21,2025-03-14T17:52:16,CB,local-gui-Python-FreeSimpleGUI,1.0,,,,
+2025-03-14T17:53:23,2025-03-14T17:53:20,,local-gui-Python-FreeSimpleGUI,1.0,,,,
+2025-03-14T17:53:49,2025-03-14T17:53:47,,local-gui-Python-FreeSimpleGUI,1.0,,,,

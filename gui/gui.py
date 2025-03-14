@@ -24,7 +24,7 @@ import os
 import FreeSimpleGUI as sg
 
 from gui.gui_outfall import outfall_window
-from gui.gui_hourly import hourly_window
+from gui.gui_hourly import overview_hourly_window
 from gui.gui_basins_clarifiers_hourly import hourly_basin_clarifiers_window
 from gui.gui_known import known_window
 
@@ -40,7 +40,7 @@ def do_browsefiles(args):
 def menu_window():
     layout = [
         [sg.Button("Outfall", key="-OUTFALL-"), sg.Button("Outfall History", key="-OUTFALL-KNOWN-")],
-        [sg.Button("Hourly", key="-HOURLY-"), sg.Button("Hourly History", key="-HOURLY-KNOWN-")], 
+        [sg.Button("Overview Hourly", key="-OVERVIEW-HOURLY-"), sg.Button("Hourly History of Overview Numbers", key="-HOURLY-KNOWN-")], 
         [sg.Button("Hourly Basins and Clarifiers", key="-BASINS-CLARIFIERS-"), sg.Button("Hourly Basins Clarifers History", key="-BASINS-CLARIFIERS-KNOWN-")], 
         [sg.Button("Exit", key="-EXIT-")]
     ]
@@ -52,8 +52,8 @@ def menu_window():
             break
         if event == "-OUTFALL-":
             outfall_window()
-        if event == "-HOURLY-":
-            hourly_window()
+        if event == "-OVERVIEW-HOURLY-":
+            overview_hourly_window()
         if event == "-BASINS-CLARIFIERS-":
             hourly_basin_clarifiers_window()
         if event == "-OUTFALL-KNOWN-":
@@ -66,7 +66,7 @@ def menu_window():
                 print(f"Error launching {window_label} data: {e}")
 
         if event == "-HOURLY-KNOWN-":
-            json_file = os.path.join("exports","intermediate" ,"hourly_data.json")
+            json_file = os.path.join("exports","intermediate" ,"flows_and_cod_hourly_data.json")
             layout_title = "Hourly Data Submissions"
             window_label = "Hourly Data Viewer"
             try:

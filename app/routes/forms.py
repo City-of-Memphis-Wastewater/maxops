@@ -10,9 +10,9 @@ import app.utils.helpers as helpers
 router = APIRouter()
 templates = Jinja2Templates(directory="templates")
 
-@router.get("/hourly-form", response_class=HTMLResponse)
-async def render_hourly_form(request: Request):
-    return templates.TemplateResponse("hourly_form.html", {"request": request})
+@router.get("/flows-and-cod-hourly-form", response_class=HTMLResponse)
+async def render_flows_and_cod_hourly_form(request: Request):
+    return templates.TemplateResponse("flows_and_cod_hourly_form.html", {"request": request})
 
 @router.post("/submit-hourly")
 async def submit_hourly_data(
@@ -38,7 +38,7 @@ async def submit_hourly_data(
         "operator": operator,
         "source": "web-post-Python-FastAPI",
     }
-    helpers.local_save_data_hourly(data)
+    helpers.local_save_data_overview_hourly(data)
     # Process the data (you can save it to a database or log it)
     print(f"Received hourly data: {data}")
     # Check if the request comes from an API (e.g., curl) or browser
