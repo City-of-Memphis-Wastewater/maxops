@@ -8,7 +8,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.9"  # Specify compatible Python versions
+python = ">=3.10,<4.0"  # Specify compatible Python versions
 fastapi = "^0.94.1"  # For building the web app
 uvicorn = "^0.21.1"  # For running the ASGI server
 cmd2 = "^2.5.3"  # For the interactive shell

@@ -521,3 +521,10 @@ operator = "CB"
 source = "local-gui-Python-FreeSimpleGUI"
 north_basin_1_MGD = 0.0
 
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-14T08:29:37"
+timestamp_intended_ISO = "2025-03-14T08:29:22"
+operator = ""
+source = "local-gui-Python-FreeSimpleGUI"
+north_basin_1_MGD = 1.0
+

@@ -18,6 +18,7 @@ from shell.tutorial import run_tutorial  # Import the tutorial function
 from shell.batch_processor import process_batch  # Import batch processing function
 
 import app.utils.helpers as helpers
+import app.utils.ingestion as ingestion
 
 # Path configuration for your project
 EXPORT_DIR = Path("./exports/intermediate")
@@ -653,6 +654,12 @@ class ShellApp(cmd2.Cmd):
         "Launch the MaxOp Graphical User Interface"
         from gui.gui import menu_window
         menu_window() 
+
+    def do_ingest(self,args):
+        "Ingest data from predefined filename set in ingestion.py."
+        ingestion.run_now()
+
+
 
 if __name__ == "__main__":
 

@@ -1,0 +1,132 @@
+[
+    {
+        "operators": [
+            null,
+            "66",
+            "Clayton Bennett"
+        ],
+        "influent_flow_rate_MGD": 66.0,
+        "after_wet_well_flow_rate_MGD": 0.0,
+        "effluent_flow_rate_MGD": 0.0,
+        "was_flow_rate_MGD": 0.0,
+        "timestamp_ISO": "2025-03-11T14:00:00"
+    },
+    {
+        "operators": [
+            "CB",
+            null
+        ],
+        "influent_flow_rate_MGD": 88.0,
+        "after_wet_well_flow_rate_MGD": 98.0,
+        "effluent_flow_rate_MGD": 88.0,
+        "was_flow_rate_MGD": 1.5,
+        "cod_predisinfection_mgPerLiter": 150.0,
+        "timestamp_ISO": "2025-03-12T10:00:00"
+    },
+    {
+        "operators": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "CB",
+            null
+        ],
+        "influent_flow_rate_MGD": 99.0,
+        "after_wet_well_flow_rate_MGD": 98.0,
+        "effluent_flow_rate_MGD": 88.0,
+        "was_flow_rate_MGD": 1.5,
+        "cod_predisinfection_mgPerLiter": 150.0,
+        "timestamp_ISO": "2025-03-12T11:00:00"
+    },
+    {
+        "operators": [
+            "Clayton Bennett",
+            null,
+            "Clayton Bennett",
+            "Clayton Bennett"
+        ],
+        "after_wet_well_flow_rate_MGD": 0.0,
+        "effluent_flow_rate_MGD": 0.0,
+        "was_flow_rate_MGD": 0.0,
+        "cod_predisinfection_mgPerLiter": 0.0,
+        "influent_flow_rate_MGD": 0.0,
+        "timestamp_ISO": "2025-03-12T12:00:00"
+    },
+    {
+        "operators": [
+            "Clayton Bennett"
+        ],
+        "influent_flow_rate_MGD": 2.0,
+        "after_wet_well_flow_rate_MGD": 2.0,
+        "effluent_flow_rate_MGD": 2.0,
+        "was_flow_rate_MGD": 2.0,
+        "cod_predisinfection_mgPerLiter": 2.0,
+        "timestamp_ISO": "2025-03-12T20:00:00"
+    },
+    {
+        "operators": [
+            null,
+            null,
+            null
+        ],
+        "timestamp_ISO": "2025-03-12T21:00:00"
+    },
+    {
+        "operators": [
+            "Clayton Bennett",
+            "Batch Eval"
+        ],
+        "influent_flow_rate_MGD": 100.0,
+        "after_wet_well_flow_rate_MGD": 99.0,
+        "effluent_flow_rate_MGD": 63.0,
+        "was_flow_rate_MGD": 1.5,
+        "timestamp_ISO": "2025-03-13T08:00:00"
+    },
+    {
+        "operators": [
+            "Clayton Bennett",
+            null,
+            "Clayton Bennett",
+            "Clayton Bennett",
+            "Clayton Bennett",
+            "Clayton Bennett",
+            "JT"
+        ],
+        "influent_flow_rate_MGD": 99.0,
+        "after_wet_well_flow_rate_MGD": 99.0,
+        "effluent_flow_rate_MGD": 55.0,
+        "was_flow_rate_MGD": 2.0,
+        "cod_predisinfection_mgPerLiter": 150.0,
+        "timestamp_ISO": "2025-03-13T13:00:00"
+    },
+    {
+        "operators": [
+            "Clayton Bennett",
+            "Clayton Bennett",
+            "goof"
+        ],
+        "influent_flow_rate_MGD": 99.0,
+        "after_wet_well_flow_rate_MGD": 98.0,
+        "effluent_flow_rate_MGD": 100.0,
+        "was_flow_rate_MGD": 2.0,
+        "cod_predisinfection_mgPerLiter": 150.0,
+        "timestamp_ISO": "2025-03-13T14:00:00"
+    },
+    {
+        "operators": [
+            null
+        ],
+        "influent_flow_rate_MGD": 1.0,
+        "after_wet_well_flow_rate_MGD": 1.0,
+        "timestamp_ISO": "2025-03-13T15:00:00"
+    }
+]
