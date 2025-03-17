@@ -71,7 +71,7 @@ def group_by_hour_most_recent_non_null(data):
     df['timestamp_entry_ISO'] = pd.to_datetime(df['timestamp_entry_ISO'], errors='coerce')
 
     # Create an hour column by rounding down the timestamps to the hour
-    df['hour'] = df['timestamp_entry_ISO'].dt.floor('h')
+    df['hour'] = df['timestamp_intended_ISO'].dt.floor('h')
 
     # Group by hour
     df = df.groupby('hour', as_index=False).apply(
@@ -107,7 +107,7 @@ def group_by_hour_collapsed(data):
     df['timestamp_entry_ISO'] = pd.to_datetime(df['timestamp_entry_ISO'], errors='coerce')
 
     # Create an hour column by rounding down the timestamps to the hour
-    df['hour'] = df['timestamp_entry_ISO'].dt.floor('h')
+    df['hour'] = df['timestamp_intended_ISO'].dt.floor('h')
 
     # Group by hour
     df = df.groupby('hour', as_index=False).apply(

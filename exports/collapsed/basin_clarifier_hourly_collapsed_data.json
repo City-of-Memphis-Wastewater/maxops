@@ -770,7 +770,8 @@
             "2025-03-13T12:32:27",
             "2025-03-13T12:32:34",
             "2025-03-13T12:41:49",
-            "2025-03-13T12:43:27"
+            "2025-03-13T12:43:27",
+            "2025-03-13T13:05:12"
         ],
         "timestamp_intended_ISOs": [
             "2025-03-13T12:31:55",
@@ -778,9 +779,11 @@
             "2025-03-13T12:31:55",
             "2025-03-13T12:31:55",
             "2025-03-13T12:41:38",
-            "2025-03-13T12:43:25"
+            "2025-03-13T12:43:25",
+            "2025-03-13T12:41:38"
         ],
         "operators": [
+            "Clayton Bennett",
             "Clayton Bennett",
             "Clayton Bennett",
             "Clayton Bennett",
@@ -794,6 +797,7 @@
             "local-gui-Python-FreeSimpleGUI",
             "local-gui-Python-FreeSimpleGUI",
             "local-gui-Python-FreeSimpleGUI",
+            "local-gui-Python-FreeSimpleGUI",
             "local-gui-Python-FreeSimpleGUI"
         ],
         "north_basin_1_MGDs": [
@@ -802,7 +806,8 @@
             1.0,
             1.0,
             1.0,
-            NaN
+            NaN,
+            1.0
         ],
         "north_basin_3_MGDs": [
             NaN,
@@ -810,7 +815,8 @@
             NaN,
             NaN,
             2.0,
-            NaN
+            NaN,
+            2.0
         ],
         "north_basin_5_MGDs": [
             NaN,
@@ -818,9 +824,11 @@
             NaN,
             NaN,
             3.0,
-            NaN
+            NaN,
+            3.0
         ],
         "north_basin_7_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -834,9 +842,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "north_basin_11_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -850,9 +860,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "south_basin_1_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -866,9 +878,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "south_basin_5_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -882,9 +896,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "south_basin_9_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -898,9 +914,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "south_basin_13_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -914,9 +932,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "north_clarifier_2_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -930,9 +950,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "north_clarifier_4_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -946,9 +968,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "south_clarifier_2_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -962,9 +986,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "south_clarifier_4_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -978,9 +1004,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "north_ras_2_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -994,9 +1022,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "north_ras_4_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -1010,9 +1040,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "south_ras_2_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -1026,9 +1058,11 @@
             NaN,
             NaN,
             NaN,
+            NaN,
             NaN
         ],
         "south_ras_4_MGDs": [
+            NaN,
             NaN,
             NaN,
             NaN,
@@ -1040,172 +1074,138 @@
     {
         "timestamp_ISO": "2025-03-13T13:00:00",
         "timestamp_entry_ISOs": [
-            "2025-03-13T13:05:12",
             "2025-03-13T13:11:40",
             "2025-03-13T13:14:05"
         ],
         "timestamp_intended_ISOs": [
-            "2025-03-13T12:41:38",
             "2025-03-13T13:11:39",
             "2025-03-13T13:13:55"
         ],
         "operators": [
             "Clayton Bennett",
-            "Clayton Bennett",
             "Clayton Bennett"
         ],
         "sources": [
             "local-gui-Python-FreeSimpleGUI",
-            "local-gui-Python-FreeSimpleGUI",
             "local-gui-Python-FreeSimpleGUI"
         ],
         "north_basin_1_MGDs": [
-            1.0,
             NaN,
             0.0
         ],
         "north_basin_3_MGDs": [
-            2.0,
             NaN,
             NaN
         ],
         "north_basin_5_MGDs": [
-            3.0,
             NaN,
             NaN
         ],
         "north_basin_7_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "north_basin_9_MGDs": [
-            NaN,
             NaN,
             NaN
         ],
         "north_basin_11_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "north_basin_13_MGDs": [
-            NaN,
             NaN,
             NaN
         ],
         "south_basin_1_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "south_basin_3_MGDs": [
-            NaN,
             NaN,
             NaN
         ],
         "south_basin_5_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "south_basin_7_MGDs": [
-            NaN,
             NaN,
             NaN
         ],
         "south_basin_9_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "south_basin_11_MGDs": [
-            NaN,
             NaN,
             NaN
         ],
         "south_basin_13_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "north_clarifier_1_MGDs": [
-            NaN,
             NaN,
             NaN
         ],
         "north_clarifier_2_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "north_clarifier_3_MGDs": [
-            NaN,
             NaN,
             NaN
         ],
         "north_clarifier_4_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "south_clarifier_1_MGDs": [
-            NaN,
             NaN,
             NaN
         ],
         "south_clarifier_2_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "south_clarifier_3_MGDs": [
-            NaN,
             NaN,
             NaN
         ],
         "south_clarifier_4_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "north_ras_1_MGDs": [
-            NaN,
             NaN,
             NaN
         ],
         "north_ras_2_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "north_ras_3_MGDs": [
-            NaN,
             NaN,
             NaN
         ],
         "north_ras_4_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "south_ras_1_MGDs": [
-            NaN,
             NaN,
             NaN
         ],
         "south_ras_2_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "south_ras_3_MGDs": [
             NaN,
-            NaN,
             NaN
         ],
         "south_ras_4_MGDs": [
-            NaN,
             NaN,
             NaN
         ]
@@ -1214,205 +1214,137 @@
         "timestamp_ISO": "2025-03-13T14:00:00",
         "timestamp_entry_ISOs": [
             "2025-03-13T14:39:06",
-            "2025-03-13T14:39:21",
-            "2025-03-13T14:39:36",
-            "2025-03-13T14:40:28"
+            "2025-03-13T14:39:36"
         ],
         "timestamp_intended_ISOs": [
             "2025-03-13T14:38:00",
-            "NaT",
-            "2025-03-13T14:00:00",
-            "NaT"
+            "2025-03-13T14:00:00"
         ],
         "operators": [
-            "CB",
-            "CB",
             "CB",
             "CB"
         ],
         "sources": [
             "local-gui-Python-FreeSimpleGUI",
-            "local-gui-Python-FreeSimpleGUI",
-            "local-gui-Python-FreeSimpleGUI",
             "local-gui-Python-FreeSimpleGUI"
         ],
         "north_basin_1_MGDs": [
-            0.0,
-            0.0,
             0.0,
             0.0
         ],
         "north_basin_3_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "north_basin_5_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "north_basin_7_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "north_basin_9_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "north_basin_11_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "north_basin_13_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "south_basin_1_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "south_basin_3_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "south_basin_5_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "south_basin_7_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "south_basin_9_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "south_basin_11_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "south_basin_13_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "north_clarifier_1_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "north_clarifier_2_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "north_clarifier_3_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "north_clarifier_4_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "south_clarifier_1_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "south_clarifier_2_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "south_clarifier_3_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "south_clarifier_4_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "north_ras_1_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "north_ras_2_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "north_ras_3_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "north_ras_4_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "south_ras_1_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ],
         "south_ras_2_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "south_ras_3_MGDs": [
             NaN,
-            NaN,
-            NaN,
             NaN
         ],
         "south_ras_4_MGDs": [
-            NaN,
-            NaN,
             NaN,
             NaN
         ]

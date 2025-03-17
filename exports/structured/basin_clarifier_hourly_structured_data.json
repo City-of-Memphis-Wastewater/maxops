@@ -224,14 +224,15 @@
             "Clayton Bennett",
             "Clayton Bennett",
             "Clayton Bennett",
+            "Clayton Bennett",
             "Clayton Bennett"
         ]
     },
     {
         "timestamp_ISO": "2025-03-13T13:00:00",
         "north_basin_1_MGD": 0.0,
-        "north_basin_3_MGD": 2.0,
-        "north_basin_5_MGD": 3.0,
+        "north_basin_3_MGD": null,
+        "north_basin_5_MGD": null,
         "north_basin_7_MGD": null,
         "north_basin_9_MGD": null,
         "north_basin_11_MGD": null,
@@ -260,7 +261,6 @@
         "south_ras_3_MGD": null,
         "south_ras_4_MGD": null,
         "operators": [
-            "Clayton Bennett",
             "Clayton Bennett",
             "Clayton Bennett"
         ]
@@ -298,8 +298,6 @@
         "south_ras_3_MGD": null,
         "south_ras_4_MGD": null,
         "operators": [
-            "CB",
-            "CB",
             "CB",
             "CB"
         ]
