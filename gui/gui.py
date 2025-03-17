@@ -66,7 +66,7 @@ def menu_window():
                 print(f"Error launching {window_label} data: {e}")
 
         if event == "-HOURLY-KNOWN-":
-            json_file = os.path.join("exports","intermediate" ,"flows_and_cod_hourly_data.json")
+            json_file = os.path.join("exports","intermediate" ,"overview_hourly_data.json")
             layout_title = "Hourly Data Submissions"
             window_label = "Hourly Data Viewer"
             try:

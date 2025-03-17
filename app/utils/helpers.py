@@ -9,28 +9,28 @@ from app.directories import Directories
 
 def ensure_dir():
     # Ensure the export directory exists
-    if not Directories.EXPORT_DIR.exists():
-        Directories.EXPORT_DIR.mkdir(parents=True)
+    if not Directories.EXPORT_DIR_INTERMEDIATE.exists():
+        Directories.EXPORT_DIR_INTERMEDIATE.mkdir(parents=True)
 
 def local_save_data_overview_hourly(data: dict):
-    save_data_to_csv(data, file_path = Directories.EXPORT_DIR / "flows_and_cod_hourly_data.csv")
-    save_data_to_json(data, file_path = Directories.EXPORT_DIR / "flows_and_cod_hourly_data.json")
-    save_data_to_toml(data, file_path = Directories.EXPORT_DIR / "flows_and_cod_hourly_data.toml")
+    save_data_to_csv(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "overview_hourly_data.csv")
+    save_data_to_json(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "overview_hourly_data.json")
+    save_data_to_toml(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "overview_hourly_data.toml")
 
 def local_save_data_daily(data: dict):
-    save_data_to_csv(data, file_path = Directories.EXPORT_DIR / "daily_data.csv")
-    save_data_to_json(data, file_path = Directories.EXPORT_DIR / "daily_data.json")
-    save_data_to_toml(data, file_path = Directories.EXPORT_DIR / "daily_data.toml")
+    save_data_to_csv(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "daily_data.csv")
+    save_data_to_json(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "daily_data.json")
+    save_data_to_toml(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "daily_data.toml")
 
 def local_save_data_outfall(data: dict):
-    save_data_to_csv(data, file_path = Directories.EXPORT_DIR / "outfall_daily_data.csv")
-    save_data_to_json(data, file_path = Directories.EXPORT_DIR / "outfall_daily_data.json")
-    save_data_to_toml(data, file_path = Directories.EXPORT_DIR / "outfall_daily_data.toml")
+    save_data_to_csv(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "outfall_daily_data.csv")
+    save_data_to_json(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "outfall_daily_data.json")
+    save_data_to_toml(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "outfall_daily_data.toml")
 
 def local_save_data_basin_clarifier_hourly(data: dict):
-    save_data_to_csv(data, file_path = Directories.EXPORT_DIR / "basin_clarifier_hourly_data.csv")
-    save_data_to_json(data, file_path = Directories.EXPORT_DIR / "basin_clarifier_hourly_data.json")
-    save_data_to_toml(data, file_path = Directories.EXPORT_DIR / "basin_clarifier_hourly_data.toml")
+    save_data_to_csv(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "basin_clarifier_hourly_data.csv")
+    save_data_to_json(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "basin_clarifier_hourly_data.json")
+    save_data_to_toml(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "basin_clarifier_hourly_data.toml")
 
 def save_data_to_csv(data: dict, file_path):
     """Save hourly data to a CSV file."""
@@ -115,9 +115,9 @@ def save_data_to_toml(data: dict, file_path):
             existing_data = toml.load(tomlfile)
 
     # Add the new entry to the existing data
-    if "flows_and_cod_hourly_data" not in existing_data:
-        existing_data["flows_and_cod_hourly_data"] = []
-    existing_data["flows_and_cod_hourly_data"].append(data)
+    if "overview_hourly_data" not in existing_data:
+        existing_data["overview_hourly_data"] = []
+    existing_data["overview_hourly_data"].append(data)
 
     # Save the updated data back to the TOML file
     with open(file_path, mode="w", encoding="utf-8") as tomlfile:
@@ -127,7 +127,7 @@ def save_data_to_toml(data: dict, file_path):
     
 def log_export_operation(message: str):
     """Log operations in export.log."""
-    file_path = Directories.EXPORT_DIR / "export.log"
+    file_path = Directories.EXPORT_DIR_INTERMEDIATE / "export.log"
     with open(file_path, mode="a", encoding="utf-8") as logfile:
         logfile.write(f"{message}\n")
 

@@ -10,9 +10,9 @@ import app.utils.helpers as helpers
 router = APIRouter()
 templates = Jinja2Templates(directory="templates")
 
-@router.get("/flows-and-cod-hourly-form", response_class=HTMLResponse)
-async def render_flows_and_cod_hourly_form(request: Request):
-    return templates.TemplateResponse("flows_and_cod_hourly_form.html", {"request": request})
+@router.get("/overview-hourly-form", response_class=HTMLResponse)
+async def render_overview_hourly_form(request: Request):
+    return templates.TemplateResponse("overview_hourly_form.html", {"request": request})
 
 @router.post("/submit-hourly")
 async def submit_hourly_data(

@@ -1,15 +1,15 @@
 [
     {
-        "operators": [
-            "CB",
-            "",
-            ""
-        ],
         "influent_flow_rate_MGD": 1.0,
         "after_wet_well_flow_rate_MGD": null,
         "effluent_flow_rate_MGD": null,
         "was_flow_rate_MGD": null,
         "cod_predisinfection_mgPerLiter": null,
+        "operators": [
+            "CB",
+            "",
+            ""
+        ],
         "timestamp_ISO": "2025-03-14T17:00:00"
     }
 ]

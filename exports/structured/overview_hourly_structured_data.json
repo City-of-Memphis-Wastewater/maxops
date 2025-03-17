@@ -1,0 +1,14 @@
+[
+    {
+        "timestamp_ISO": "2025-03-17T14:00:00",
+        "influent_flow_rate_MGD": 1.0,
+        "after_wet_well_flow_rate_MGD": 2.0,
+        "effluent_flow_rate_MGD": 3.0,
+        "was_flow_rate_MGD": 4.0,
+        "cod_predisinfection_mgPerLiter": 5.0,
+        "operators": [
+            "CB",
+            "CB"
+        ]
+    }
+]

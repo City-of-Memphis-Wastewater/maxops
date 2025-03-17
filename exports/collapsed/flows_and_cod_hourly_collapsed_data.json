@@ -1,0 +1,50 @@
+[
+    {
+        "timestamp_entry_ISOs": [
+            "2025-03-14T17:52:21",
+            "2025-03-14T17:53:23",
+            "2025-03-14T17:53:49"
+        ],
+        "timestamp_intended_ISOs": [
+            "2025-03-14T17:52:16",
+            "2025-03-14T17:53:20",
+            "2025-03-14T17:53:47"
+        ],
+        "operators": [
+            "CB",
+            "",
+            ""
+        ],
+        "sources": [
+            "local-gui-Python-FreeSimpleGUI",
+            "local-gui-Python-FreeSimpleGUI",
+            "local-gui-Python-FreeSimpleGUI"
+        ],
+        "influent_flow_rate_MGDs": [
+            1.0,
+            1.0,
+            1.0
+        ],
+        "after_wet_well_flow_rate_MGDs": [
+            null,
+            null,
+            null
+        ],
+        "effluent_flow_rate_MGDs": [
+            null,
+            null,
+            null
+        ],
+        "was_flow_rate_MGDs": [
+            null,
+            null,
+            null
+        ],
+        "cod_predisinfection_mgPerLiters": [
+            null,
+            null,
+            null
+        ],
+        "timestamp_ISO": "2025-03-14T17:00:00"
+    }
+]

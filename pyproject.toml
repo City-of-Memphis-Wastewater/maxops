@@ -8,7 +8,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = ">=3.10,<4.0"  # Specify compatible Python versions
+python = ">=3.10,<3.11" # Specify compatible Python versions
 fastapi = "^0.94.1"  # For building the web app
 uvicorn = "^0.21.1"  # For running the ASGI server
 cmd2 = "^2.5.3"  # For the interactive shell
@@ -17,11 +17,13 @@ toml = "^0.10.2"  # For handling TOML file generation and parsing
 jinja2 = "^3.1.6"
 python-multipart = "^0.0.20"
 freesimplegui = "^5.1.1"
+numpy = "1.26"
+pandas = "^2.2.3"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.1"  # For testing
 black = "^22.12.0"  # For code formatting
-flake8 = "^6.0.0"  # For linting
+flake8 = "^6.0.0"  # For lintingpython = ">=3.10,<3.11"
 mypy = "^1.0.1"  # For type checking
 isort = "^5.11.0"  # For sorting imports
 

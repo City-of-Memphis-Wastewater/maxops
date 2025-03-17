@@ -101,6 +101,10 @@ class ShellApp(cmd2.Cmd):
         if os.path.exists(self.persistent_history_file):
             self._load_history()
 
+    def do_h(self,args):
+        "help"
+        self.do_help(args)
+
     def _load_history(self):
         """Load commands from the persistent history file at startup."""
         try:

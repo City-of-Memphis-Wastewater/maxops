@@ -1,42 +1,48 @@
 [
     {
-        "operators": [
-            "Clayton Bennett",
-            "Clayton Bennett"
-        ],
+        "timestamp_ISO": "2025-03-11T14:00:00",
         "safe_to_make_observation": true,
         "floatable_present": true,
         "scum_present": false,
         "foam_present": false,
         "oil_present": true,
-        "timestamp_ISO": "2025-03-11T14:00:00"
-    },
-    {
         "operators": [
             "Clayton Bennett",
-            "Clayton Bennett",
-            "Clayton Bennett",
             "Clayton Bennett"
-        ],
+        ]
+    },
+    {
+        "timestamp_ISO": "2025-03-12T12:00:00",
         "safe_to_make_observation": true,
         "floatable_present": true,
         "scum_present": true,
         "foam_present": true,
         "oil_present": true,
-        "timestamp_ISO": "2025-03-12T12:00:00"
+        "operators": [
+            "Clayton Bennett",
+            "Clayton Bennett",
+            "Clayton Bennett",
+            "Clayton Bennett"
+        ]
     },
     {
-        "operators": [
-            "Clayton Bennett"
-        ],
+        "timestamp_ISO": "2025-03-12T20:00:00",
         "safe_to_make_observation": true,
         "floatable_present": true,
         "scum_present": true,
         "foam_present": true,
         "oil_present": true,
-        "timestamp_ISO": "2025-03-12T20:00:00"
+        "operators": [
+            "Clayton Bennett"
+        ]
     },
     {
+        "timestamp_ISO": "2025-03-13T08:00:00",
+        "safe_to_make_observation": true,
+        "floatable_present": true,
+        "scum_present": false,
+        "foam_present": false,
+        "oil_present": true,
         "operators": [
             "Clayton Bennett",
             "Batch Eval",
@@ -44,28 +50,28 @@
             "Batch Eval",
             "Clayton Bennett",
             "Batch Eval"
-        ],
-        "safe_to_make_observation": true,
-        "floatable_present": true,
-        "scum_present": false,
-        "foam_present": false,
-        "oil_present": true,
-        "timestamp_ISO": "2025-03-13T08:00:00"
+        ]
     },
     {
-        "operators": [
-            "Clayton Bennett",
-            "Clayton Bennett",
-            "JT"
-        ],
+        "timestamp_ISO": "2025-03-13T13:00:00",
         "safe_to_make_observation": true,
         "floatable_present": true,
         "scum_present": false,
         "foam_present": true,
         "oil_present": false,
-        "timestamp_ISO": "2025-03-13T13:00:00"
+        "operators": [
+            "Clayton Bennett",
+            "Clayton Bennett",
+            "JT"
+        ]
     },
     {
+        "timestamp_ISO": "2025-03-13T14:00:00",
+        "safe_to_make_observation": true,
+        "floatable_present": true,
+        "scum_present": false,
+        "foam_present": false,
+        "oil_present": true,
         "operators": [
             "Clayton Bennett",
             "CB",
@@ -73,50 +79,44 @@
             "Batch Eval",
             "Clayton Bennett",
             "Batch Eval"
-        ],
+        ]
+    },
+    {
+        "timestamp_ISO": "2025-03-13T15:00:00",
         "safe_to_make_observation": true,
         "floatable_present": true,
         "scum_present": false,
         "foam_present": false,
         "oil_present": true,
-        "timestamp_ISO": "2025-03-13T14:00:00"
-    },
-    {
         "operators": [
             "Batch Eval",
             "Batch Eval"
-        ],
-        "safe_to_make_observation": true,
-        "floatable_present": true,
-        "scum_present": false,
-        "foam_present": false,
-        "oil_present": true,
-        "timestamp_ISO": "2025-03-13T15:00:00"
+        ]
     },
     {
+        "timestamp_ISO": "2025-03-14T13:00:00",
+        "safe_to_make_observation": true,
+        "floatable_present": true,
+        "scum_present": true,
+        "foam_present": true,
+        "oil_present": true,
         "operators": [
             "HN",
             "HN",
             "SB",
             "SB",
             "SB"
-        ],
-        "safe_to_make_observation": true,
-        "floatable_present": true,
-        "scum_present": true,
-        "foam_present": true,
-        "oil_present": true,
-        "timestamp_ISO": "2025-03-14T13:00:00"
+        ]
     },
     {
-        "operators": [
-            "CB"
-        ],
+        "timestamp_ISO": "2025-03-14T18:00:00",
         "safe_to_make_observation": true,
         "floatable_present": false,
         "scum_present": true,
         "foam_present": false,
         "oil_present": true,
-        "timestamp_ISO": "2025-03-14T18:00:00"
+        "operators": [
+            "CB"
+        ]
     }
 ]
