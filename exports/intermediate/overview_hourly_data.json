@@ -20,5 +20,38 @@
         "cod_predisinfection_mgPerLiter": 5.0,
         "operator": "CB",
         "source": "web-post-Python-FastAPI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-19T21:26:18",
+        "timestamp_intended_ISO": "2025-03-19T21:26:00",
+        "influent_flow_rate_MGD": 0.1,
+        "after_wet_well_flow_rate_MGD": 2.0,
+        "effluent_flow_rate_MGD": null,
+        "was_flow_rate_MGD": null,
+        "cod_predisinfection_mgPerLiter": null,
+        "operator": null,
+        "source": "web-post-Python-FastAPI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-19T22:28:14",
+        "timestamp_intended_ISO": "2025-03-13T23:11:11",
+        "operator": "MikeGee",
+        "source": "local-gui-Python-FreeSimpleGUI",
+        "influent_flow_rate_MGD": 1.0,
+        "after_wet_well_flow_rate_MGD": 1.0,
+        "effluent_flow_rate_MGD": 3.0,
+        "was_flow_rate_MGD": 4.0,
+        "cod_predisinfection_mgPerLiter": 6.0
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-19T22:28:34",
+        "timestamp_intended_ISO": "2025-03-13T22:00:00",
+        "operator": "MikeGee",
+        "source": "local-gui-Python-FreeSimpleGUI",
+        "influent_flow_rate_MGD": 2.0,
+        "after_wet_well_flow_rate_MGD": 1.0,
+        "effluent_flow_rate_MGD": 3.0,
+        "was_flow_rate_MGD": 4.0,
+        "cod_predisinfection_mgPerLiter": 6.0
     }
 ]

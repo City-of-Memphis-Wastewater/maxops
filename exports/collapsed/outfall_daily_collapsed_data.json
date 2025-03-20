@@ -478,5 +478,143 @@
         "sources": [
             "local-gui-Python-FreeSimpleGUI"
         ]
+    },
+    {
+        "timestamp_ISO": "2025-03-19T18:00:00",
+        "timestamp_entry_ISOs": [
+            "2025-03-19T21:29:31"
+        ],
+        "timestamp_intended_ISOs": [
+            "2025-03-19T18:00:00"
+        ],
+        "safe_to_make_observations": [
+            true
+        ],
+        "floatable_presents": [
+            false
+        ],
+        "scum_presents": [
+            true
+        ],
+        "foam_presents": [
+            true
+        ],
+        "oil_presents": [
+            false
+        ],
+        "operators": [
+            "CT"
+        ],
+        "sources": [
+            "web-post-Python-FastAPI"
+        ]
+    },
+    {
+        "timestamp_ISO": "2025-03-19T19:00:00",
+        "timestamp_entry_ISOs": [
+            "2025-03-19T21:29:59"
+        ],
+        "timestamp_intended_ISOs": [
+            "2025-03-19T19:00:00"
+        ],
+        "safe_to_make_observations": [
+            true
+        ],
+        "floatable_presents": [
+            true
+        ],
+        "scum_presents": [
+            true
+        ],
+        "foam_presents": [
+            true
+        ],
+        "oil_presents": [
+            true
+        ],
+        "operators": [
+            "CB"
+        ],
+        "sources": [
+            "local-gui-Python-FreeSimpleGUI"
+        ]
+    },
+    {
+        "timestamp_ISO": "2025-03-19T23:00:00",
+        "timestamp_entry_ISOs": [
+            "2025-03-19T23:55:10"
+        ],
+        "timestamp_intended_ISOs": [
+            "2025-03-19T23:55:10"
+        ],
+        "safe_to_make_observations": [
+            false
+        ],
+        "floatable_presents": [
+            false
+        ],
+        "scum_presents": [
+            false
+        ],
+        "foam_presents": [
+            false
+        ],
+        "oil_presents": [
+            false
+        ],
+        "operators": [
+            "CB"
+        ],
+        "sources": [
+            "local-shell-Python-cmd2"
+        ]
+    },
+    {
+        "timestamp_ISO": "2025-03-20T00:00:00",
+        "timestamp_entry_ISOs": [
+            "2025-03-20T00:05:16",
+            "2025-03-20T00:09:14",
+            "2025-03-20T00:12:22"
+        ],
+        "timestamp_intended_ISOs": [
+            "2025-03-20T00:05:16",
+            "2025-03-20T00:08:53",
+            "2025-03-20T00:11:00"
+        ],
+        "safe_to_make_observations": [
+            false,
+            true,
+            true
+        ],
+        "floatable_presents": [
+            false,
+            true,
+            true
+        ],
+        "scum_presents": [
+            false,
+            true,
+            true
+        ],
+        "foam_presents": [
+            false,
+            true,
+            true
+        ],
+        "oil_presents": [
+            false,
+            true,
+            false
+        ],
+        "operators": [
+            "CB",
+            "CB",
+            "Clayton Bennett"
+        ],
+        "sources": [
+            "web-post-Python-FastAPI",
+            "web-post-Python-FastAPI",
+            "web-post-Python-FastAPI"
+        ]
     }
 ]

@@ -255,7 +255,7 @@ class IntermediateExport:
     @staticmethod
     def ingest_data_to_collapsed_hourly_list(key,loaded_intermediate_data, collapsed_export_filename):
         hourly_data_collapsed = group_by_hour_collapsed(loaded_intermediate_data) # comparable to overview-hourly-form=
-        check_for_Timestamp(hourly_data_collapsed)
+        #check_for_Timestamp(hourly_data_collapsed)
         save_to_json(hourly_data_collapsed, collapsed_export_filename)
         basename = collapsed_export_filename.name
         basename_toml = basename.replace(".json",".toml") 

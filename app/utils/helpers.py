@@ -179,8 +179,8 @@ def special_word(timestamp):
 
 # === Command: Sanitize Time ===
 def sanitize_time(timestamp):
-    print(f"timestamp = {timestamp}")
-    print(f"bool = {timestamp=='now'}")
+    #print(f"timestamp = {timestamp}")
+    #print(f"bool = {timestamp=='now'}")
     # Check and handle the timestamp, if it has minutes but not seconds
     if not(expected_length(timestamp)) and not(special_word(timestamp)):
         raise ValueError("Invalid time value.")
@@ -207,8 +207,8 @@ def sanitize_time(timestamp):
         return timestamp
     elif timestamp == "now" or timestamp is None:
         # overwrite
-        print("timestamp is 'now', attempting to assign..")
-        print(f"timestamp assigned as {timestamp}")
+        #print("timestamp is 'now', attempting to assign..")
+        print(f"timestamp 'now' assigned as {timestamp}.")
         return nowtime()
     
     else: 

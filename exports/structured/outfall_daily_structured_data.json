@@ -128,5 +128,51 @@
         "operators": [
             "CB"
         ]
+    },
+    {
+        "timestamp_ISO": "2025-03-19T18:00:00",
+        "safe_to_make_observation": true,
+        "floatable_present": false,
+        "scum_present": true,
+        "foam_present": true,
+        "oil_present": false,
+        "operators": [
+            "CT"
+        ]
+    },
+    {
+        "timestamp_ISO": "2025-03-19T19:00:00",
+        "safe_to_make_observation": true,
+        "floatable_present": true,
+        "scum_present": true,
+        "foam_present": true,
+        "oil_present": true,
+        "operators": [
+            "CB"
+        ]
+    },
+    {
+        "timestamp_ISO": "2025-03-19T23:00:00",
+        "safe_to_make_observation": false,
+        "floatable_present": false,
+        "scum_present": false,
+        "foam_present": false,
+        "oil_present": false,
+        "operators": [
+            "CB"
+        ]
+    },
+    {
+        "timestamp_ISO": "2025-03-20T00:00:00",
+        "safe_to_make_observation": true,
+        "floatable_present": true,
+        "scum_present": true,
+        "foam_present": true,
+        "oil_present": false,
+        "operators": [
+            "CB",
+            "CB",
+            "Clayton Bennett"
+        ]
     }
 ]

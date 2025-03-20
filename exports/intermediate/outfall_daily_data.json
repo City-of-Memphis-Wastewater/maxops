@@ -328,5 +328,71 @@
         "oil_present": true,
         "operator": "CB",
         "source": "local-gui-Python-FreeSimpleGUI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-19T21:29:31",
+        "timestamp_intended_ISO": "2025-03-19T18:00:00",
+        "safe_to_make_observation": true,
+        "floatable_present": false,
+        "scum_present": true,
+        "foam_present": true,
+        "oil_present": false,
+        "operator": "CT",
+        "source": "web-post-Python-FastAPI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-19T21:29:59",
+        "timestamp_intended_ISO": "2025-03-19T19:00:00",
+        "safe_to_make_observation": true,
+        "floatable_present": true,
+        "scum_present": true,
+        "foam_present": true,
+        "oil_present": true,
+        "operator": "CB",
+        "source": "local-gui-Python-FreeSimpleGUI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-19T23:55:10",
+        "timestamp_intended_ISO": "2025-03-19T23:55:10",
+        "safe_to_make_observation": false,
+        "floatable_present": false,
+        "scum_present": false,
+        "foam_present": false,
+        "oil_present": false,
+        "operator": "CB",
+        "source": "local-shell-Python-cmd2"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-20T00:05:16",
+        "timestamp_intended_ISO": "2025-03-20T00:05:16",
+        "safe_to_make_observation": false,
+        "floatable_present": false,
+        "scum_present": false,
+        "foam_present": false,
+        "oil_present": false,
+        "operator": "CB",
+        "source": "web-post-Python-FastAPI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-20T00:09:14",
+        "timestamp_intended_ISO": "2025-03-20T00:08:53",
+        "safe_to_make_observation": true,
+        "floatable_present": true,
+        "scum_present": true,
+        "foam_present": true,
+        "oil_present": true,
+        "operator": "CB",
+        "source": "web-post-Python-FastAPI"
+    },
+    {
+        "timestamp_entry_ISO": "2025-03-20T00:12:22",
+        "timestamp_intended_ISO": "2025-03-20T00:11:00",
+        "safe_to_make_observation": true,
+        "floatable_present": true,
+        "scum_present": true,
+        "foam_present": true,
+        "oil_present": false,
+        "operator": "Clayton Bennett",
+        "source": "web-post-Python-FastAPI"
     }
 ]
