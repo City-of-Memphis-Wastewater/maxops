@@ -37,10 +37,10 @@ def read_root(request: Request):
 def get_daily_form(request: Request):
     return templates.TemplateResponse("daily_form.html", {"request": request})
 
-# Route for the Hourly Form
-@app.get("/hourly-form", response_class=HTMLResponse)
-def get_hourly_form(request: Request):
-    return templates.TemplateResponse("hourly_form.html", {"request": request})
+# Route for the Overview Hourly Form
+@app.get("/overview-hourly-form", response_class=HTMLResponse)
+def get_overview_hourly_form(request: Request):
+    return templates.TemplateResponse("overview_hourly_form.html", {"request": request})
 
 # Route for the Dashboard
 @app.get("/dashboard", response_class=HTMLResponse)

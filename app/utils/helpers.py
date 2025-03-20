@@ -3,33 +3,34 @@ import csv
 import json
 import toml
 from datetime import datetime
+from app.directories import Directories
 
-EXPORT_DIR = Path("./exports/intermediate")
+
 
 def ensure_dir():
     # Ensure the export directory exists
-    if not EXPORT_DIR.exists():
-        EXPORT_DIR.mkdir(parents=True)
+    if not Directories.EXPORT_DIR_INTERMEDIATE.exists():
+        Directories.EXPORT_DIR_INTERMEDIATE.mkdir(parents=True)
 
-def local_save_data_hourly(data: dict):
-    save_data_to_csv(data, file_path = EXPORT_DIR / "hourly_data.csv")
-    save_data_to_json(data, file_path = EXPORT_DIR / "hourly_data.json")
-    save_data_to_toml(data, file_path = EXPORT_DIR / "hourly_data.toml")
+def local_save_data_overview_hourly(data: dict):
+    save_data_to_csv(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "overview_hourly_data.csv")
+    save_data_to_json(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "overview_hourly_data.json")
+    save_data_to_toml(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "overview_hourly_data.toml")
 
 def local_save_data_daily(data: dict):
-    save_data_to_csv(data, file_path = EXPORT_DIR / "daily_data.csv")
-    save_data_to_json(data, file_path = EXPORT_DIR / "daily_data.json")
-    save_data_to_toml(data, file_path = EXPORT_DIR / "daily_data.toml")
+    save_data_to_csv(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "daily_data.csv")
+    save_data_to_json(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "daily_data.json")
+    save_data_to_toml(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "daily_data.toml")
 
 def local_save_data_outfall(data: dict):
-    save_data_to_csv(data, file_path = EXPORT_DIR / "outfall_daily_data.csv")
-    save_data_to_json(data, file_path = EXPORT_DIR / "outfall_daily_data.json")
-    save_data_to_toml(data, file_path = EXPORT_DIR / "outfall_daily_data.toml")
+    save_data_to_csv(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "outfall_daily_data.csv")
+    save_data_to_json(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "outfall_daily_data.json")
+    save_data_to_toml(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "outfall_daily_data.toml")
 
 def local_save_data_basin_clarifier_hourly(data: dict):
-    save_data_to_csv(data, file_path = EXPORT_DIR / "basin_clarifier_hourly_data.csv")
-    save_data_to_json(data, file_path = EXPORT_DIR / "basin_clarifier_hourly_data.json")
-    save_data_to_toml(data, file_path = EXPORT_DIR / "basin_clarifier_hourly_data.toml")
+    save_data_to_csv(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "basin_clarifier_hourly_data.csv")
+    save_data_to_json(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "basin_clarifier_hourly_data.json")
+    save_data_to_toml(data, file_path = Directories.EXPORT_DIR_INTERMEDIATE / "basin_clarifier_hourly_data.toml")
 
 def save_data_to_csv(data: dict, file_path):
     """Save hourly data to a CSV file."""
@@ -114,9 +115,9 @@ def save_data_to_toml(data: dict, file_path):
             existing_data = toml.load(tomlfile)
 
     # Add the new entry to the existing data
-    if "hourly_data" not in existing_data:
-        existing_data["hourly_data"] = []
-    existing_data["hourly_data"].append(data)
+    if "overview_hourly_data" not in existing_data:
+        existing_data["overview_hourly_data"] = []
+    existing_data["overview_hourly_data"].append(data)
 
     # Save the updated data back to the TOML file
     with open(file_path, mode="w", encoding="utf-8") as tomlfile:
@@ -126,7 +127,7 @@ def save_data_to_toml(data: dict, file_path):
     
 def log_export_operation(message: str):
     """Log operations in export.log."""
-    file_path = EXPORT_DIR / "export.log"
+    file_path = Directories.EXPORT_DIR_INTERMEDIATE / "export.log"
     with open(file_path, mode="a", encoding="utf-8") as logfile:
         logfile.write(f"{message}\n")
 
@@ -167,11 +168,21 @@ def nowtime():
     now_time = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
     return now_time
 
+def expected_length(timestamp):
+    long_enogh_to_be_in_ISO_time = (len(timestamp)>=16) # "%Y-%m-%dT%H:%M:%S" or "%Y-%m-%dT%H:%M"
+    short_enough_to_be_an_hour = (len(timestamp)<=2) # 14
+    return  long_enogh_to_be_in_ISO_time or short_enough_to_be_an_hour
+
+
+def special_word(timestamp):
+    return timestamp.strip()=="now"
+
 # === Command: Sanitize Time ===
 def sanitize_time(timestamp):
-    print(f"timestamp = {timestamp}")
+    #print(f"timestamp = {timestamp}")
+    #print(f"bool = {timestamp=='now'}")
     # Check and handle the timestamp, if it has minutes but not seconds
-    if len(timestamp)<16 and len(timestamp)>2:
+    if not(expected_length(timestamp)) and not(special_word(timestamp)):
         raise ValueError("Invalid time value.")
     try:
         # Attempt to parse the timestamp with the "%Y-%m-%dT%H:%M" format (up to minutes)
@@ -196,8 +207,8 @@ def sanitize_time(timestamp):
         return timestamp
     elif timestamp == "now" or timestamp is None:
         # overwrite
-        print("timestamp is 'now', attempting to assign..")
-        print(f"timestamp assigned as {timestamp}")
+        #print("timestamp is 'now', attempting to assign..")
+        print(f"timestamp 'now' assigned as {timestamp}.")
         return nowtime()
     
     else: 

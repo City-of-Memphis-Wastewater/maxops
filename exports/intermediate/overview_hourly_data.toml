@@ -1,0 +1,51 @@
+[[overview_hourly_data]]
+timestamp_entry_ISO = "2025-03-17T14:00:50"
+timestamp_intended_ISO = "2025-03-17T14:00:41"
+operator = "CB"
+source = "local-gui-Python-FreeSimpleGUI"
+influent_flow_rate_MGD = 33.0
+after_wet_well_flow_rate_MGD = 44.0
+effluent_flow_rate_MGD = 55.0
+was_flow_rate_MGD = 66.0
+cod_predisinfection_mgPerLiter = 77.0
+
+[[overview_hourly_data]]
+timestamp_entry_ISO = "2025-03-17T14:02:59"
+timestamp_intended_ISO = "2025-03-17T14:02:00"
+influent_flow_rate_MGD = 1.0
+after_wet_well_flow_rate_MGD = 2.0
+effluent_flow_rate_MGD = 3.0
+was_flow_rate_MGD = 4.0
+cod_predisinfection_mgPerLiter = 5.0
+operator = "CB"
+source = "web-post-Python-FastAPI"
+
+[[overview_hourly_data]]
+timestamp_entry_ISO = "2025-03-19T21:26:18"
+timestamp_intended_ISO = "2025-03-19T21:26:00"
+influent_flow_rate_MGD = 0.1
+after_wet_well_flow_rate_MGD = 2.0
+source = "web-post-Python-FastAPI"
+
+[[overview_hourly_data]]
+timestamp_entry_ISO = "2025-03-19T22:28:14"
+timestamp_intended_ISO = "2025-03-13T23:11:11"
+operator = "MikeGee"
+source = "local-gui-Python-FreeSimpleGUI"
+influent_flow_rate_MGD = 1.0
+after_wet_well_flow_rate_MGD = 1.0
+effluent_flow_rate_MGD = 3.0
+was_flow_rate_MGD = 4.0
+cod_predisinfection_mgPerLiter = 6.0
+
+[[overview_hourly_data]]
+timestamp_entry_ISO = "2025-03-19T22:28:34"
+timestamp_intended_ISO = "2025-03-13T22:00:00"
+operator = "MikeGee"
+source = "local-gui-Python-FreeSimpleGUI"
+influent_flow_rate_MGD = 2.0
+after_wet_well_flow_rate_MGD = 1.0
+effluent_flow_rate_MGD = 3.0
+was_flow_rate_MGD = 4.0
+cod_predisinfection_mgPerLiter = 6.0
+

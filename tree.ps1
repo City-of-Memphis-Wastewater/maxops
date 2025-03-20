@@ -34,7 +34,7 @@ New-Item -ItemType File -Path "$baseDir\gui\local_gui.py" -Force
 New-Item -ItemType File -Path "$baseDir\static\css\styles.css" -Force
 New-Item -ItemType File -Path "$baseDir\static\js\script.js" -Force
 New-Item -ItemType File -Path "$baseDir\templates\dashboard.html" -Force
-New-Item -ItemType File -Path "$baseDir\templates\hourly_form.html" -Force
+New-Item -ItemType File -Path "$baseDir\templates\overview_hourly_form.html" -Force
 New-Item -ItemType File -Path "$baseDir\templates\daily_form.html" -Force
 New-Item -ItemType File -Path "$baseDir\tests\test_main.py" -Force
 New-Item -ItemType File -Path "$baseDir\tests\test_queries.py" -Force

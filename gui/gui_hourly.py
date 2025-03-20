@@ -2,7 +2,7 @@ import requests
 import FreeSimpleGUI as sg
 import app.utils.helpers as helpers
 
-def hourly_window():
+def overview_hourly_window():
     default_time = helpers.nowtime()
     layout = [
         [sg.Text("Operator Initials:"), sg.InputText(default_text="", key="operator", size=(20, 1))],
@@ -18,7 +18,7 @@ def hourly_window():
         [sg.Text("If you submit multiple values in an hour, the most recent one will be used.",font=("Helvetica", 8, "italic"))]
     ]
 
-    window = sg.Window("Hourly Frame", layout)
+    window = sg.Window("Overview Hourly Frame", layout)
 
     while True:
         event, values = window.read()
@@ -52,10 +52,10 @@ def hourly_window():
                     print(f"Error passing data: {e}")
                     print("Web app not running, defaulting to local export.")
 
-                    helpers.local_save_data_hourly(data)
+                    helpers.local_save_data_overview_hourly(data)
                     sg.Popup("Hourly data saved successfully!")
             
     window.close()
 
 if __name__ == "__main__":
-    hourly_window()
+    overview_hourly_window()

@@ -17,6 +17,7 @@ def create_table_layout(data):
     if data:
         headers = list(data[0].keys())
         values = [[entry[key] for key in headers] for entry in data]
+        values.reverse()  # Flip the order of the data
     else:
         headers = ["No Data Found"]
         values = []
@@ -51,6 +52,7 @@ def make_layout(data,layout_title):
     screen_width, screen_height = sg.Window.get_screen_size()
     layout = [
         [sg.Text(layout_title, font=("Helvetica", 16))],
+        [sg.Text("Sorted most recent to least recent.", font=("Helvetica", 8, "italic"))],
         [sg.Column(
             [[sg.Table(
                 values=table_data,

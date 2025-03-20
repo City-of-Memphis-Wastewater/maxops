@@ -1,0 +1,131 @@
+[
+    {
+        "timestamp_ISO": "2025-03-13T22:00:00",
+        "timestamp_entry_ISOs": [
+            "2025-03-19T22:28:34"
+        ],
+        "timestamp_intended_ISOs": [
+            "2025-03-13T22:00:00"
+        ],
+        "operators": [
+            "MikeGee"
+        ],
+        "sources": [
+            "local-gui-Python-FreeSimpleGUI"
+        ],
+        "influent_flow_rate_MGDs": [
+            2.0
+        ],
+        "after_wet_well_flow_rate_MGDs": [
+            1.0
+        ],
+        "effluent_flow_rate_MGDs": [
+            3.0
+        ],
+        "was_flow_rate_MGDs": [
+            4.0
+        ],
+        "cod_predisinfection_mgPerLiters": [
+            6.0
+        ]
+    },
+    {
+        "timestamp_ISO": "2025-03-13T23:00:00",
+        "timestamp_entry_ISOs": [
+            "2025-03-19T22:28:14"
+        ],
+        "timestamp_intended_ISOs": [
+            "2025-03-13T23:11:11"
+        ],
+        "operators": [
+            "MikeGee"
+        ],
+        "sources": [
+            "local-gui-Python-FreeSimpleGUI"
+        ],
+        "influent_flow_rate_MGDs": [
+            1.0
+        ],
+        "after_wet_well_flow_rate_MGDs": [
+            1.0
+        ],
+        "effluent_flow_rate_MGDs": [
+            3.0
+        ],
+        "was_flow_rate_MGDs": [
+            4.0
+        ],
+        "cod_predisinfection_mgPerLiters": [
+            6.0
+        ]
+    },
+    {
+        "timestamp_ISO": "2025-03-17T14:00:00",
+        "timestamp_entry_ISOs": [
+            "2025-03-17T14:00:50",
+            "2025-03-17T14:02:59"
+        ],
+        "timestamp_intended_ISOs": [
+            "2025-03-17T14:00:41",
+            "2025-03-17T14:02:00"
+        ],
+        "operators": [
+            "CB",
+            "CB"
+        ],
+        "sources": [
+            "local-gui-Python-FreeSimpleGUI",
+            "web-post-Python-FastAPI"
+        ],
+        "influent_flow_rate_MGDs": [
+            33.0,
+            1.0
+        ],
+        "after_wet_well_flow_rate_MGDs": [
+            44.0,
+            2.0
+        ],
+        "effluent_flow_rate_MGDs": [
+            55.0,
+            3.0
+        ],
+        "was_flow_rate_MGDs": [
+            66.0,
+            4.0
+        ],
+        "cod_predisinfection_mgPerLiters": [
+            77.0,
+            5.0
+        ]
+    },
+    {
+        "timestamp_ISO": "2025-03-19T21:00:00",
+        "timestamp_entry_ISOs": [
+            "2025-03-19T21:26:18"
+        ],
+        "timestamp_intended_ISOs": [
+            "2025-03-19T21:26:00"
+        ],
+        "operators": [
+            null
+        ],
+        "sources": [
+            "web-post-Python-FastAPI"
+        ],
+        "influent_flow_rate_MGDs": [
+            0.1
+        ],
+        "after_wet_well_flow_rate_MGDs": [
+            2.0
+        ],
+        "effluent_flow_rate_MGDs": [
+            NaN
+        ],
+        "was_flow_rate_MGDs": [
+            NaN
+        ],
+        "cod_predisinfection_mgPerLiters": [
+            NaN
+        ]
+    }
+]

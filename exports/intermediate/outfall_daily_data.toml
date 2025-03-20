@@ -334,3 +334,135 @@ oil_present = true
 operator = "Batch Eval"
 source = "local-shell-Python-cmd2"
 
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-14T13:13:13"
+timestamp_intended_ISO = "2025-03-14T13:13:01"
+safe_to_make_observation = true
+floatable_present = false
+scum_present = false
+foam_present = false
+oil_present = true
+operator = "HN"
+source = "local-gui-Python-FreeSimpleGUI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-14T13:13:18"
+timestamp_intended_ISO = "2025-03-14T13:13:01"
+safe_to_make_observation = true
+floatable_present = false
+scum_present = false
+foam_present = false
+oil_present = true
+operator = "HN"
+source = "local-gui-Python-FreeSimpleGUI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-14T13:18:16"
+timestamp_intended_ISO = "2025-03-14T11:00:00"
+safe_to_make_observation = true
+floatable_present = true
+scum_present = true
+foam_present = true
+oil_present = true
+operator = "SB"
+source = "web-post-Python-FastAPI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-14T13:18:43"
+timestamp_intended_ISO = "2025-03-14T11:00:00"
+safe_to_make_observation = true
+floatable_present = true
+scum_present = true
+foam_present = true
+oil_present = true
+operator = "SB"
+source = "local-gui-Python-FreeSimpleGUI"
+
+[[hourly_data]]
+timestamp_entry_ISO = "2025-03-14T13:36:56"
+timestamp_intended_ISO = "2025-03-14T11:00:00"
+safe_to_make_observation = true
+floatable_present = true
+scum_present = true
+foam_present = true
+oil_present = true
+operator = "SB"
+source = "local-gui-Python-FreeSimpleGUI"
+
+[[flows_and_cod_hourly_data]]
+timestamp_entry_ISO = "2025-03-14T18:00:13"
+timestamp_intended_ISO = "2025-03-14T17:59:59"
+safe_to_make_observation = true
+floatable_present = false
+scum_present = true
+foam_present = false
+oil_present = true
+operator = "CB"
+source = "local-gui-Python-FreeSimpleGUI"
+
+[[overview_hourly_data]]
+timestamp_entry_ISO = "2025-03-19T21:29:31"
+timestamp_intended_ISO = "2025-03-19T18:00:00"
+safe_to_make_observation = true
+floatable_present = false
+scum_present = true
+foam_present = true
+oil_present = false
+operator = "CT"
+source = "web-post-Python-FastAPI"
+
+[[overview_hourly_data]]
+timestamp_entry_ISO = "2025-03-19T21:29:59"
+timestamp_intended_ISO = "2025-03-19T19:00:00"
+safe_to_make_observation = true
+floatable_present = true
+scum_present = true
+foam_present = true
+oil_present = true
+operator = "CB"
+source = "local-gui-Python-FreeSimpleGUI"
+
+[[overview_hourly_data]]
+timestamp_entry_ISO = "2025-03-19T23:55:10"
+timestamp_intended_ISO = "2025-03-19T23:55:10"
+safe_to_make_observation = false
+floatable_present = false
+scum_present = false
+foam_present = false
+oil_present = false
+operator = "CB"
+source = "local-shell-Python-cmd2"
+
+[[overview_hourly_data]]
+timestamp_entry_ISO = "2025-03-20T00:05:16"
+timestamp_intended_ISO = "2025-03-20T00:05:16"
+safe_to_make_observation = false
+floatable_present = false
+scum_present = false
+foam_present = false
+oil_present = false
+operator = "CB"
+source = "web-post-Python-FastAPI"
+
+[[overview_hourly_data]]
+timestamp_entry_ISO = "2025-03-20T00:09:14"
+timestamp_intended_ISO = "2025-03-20T00:08:53"
+safe_to_make_observation = true
+floatable_present = true
+scum_present = true
+foam_present = true
+oil_present = true
+operator = "CB"
+source = "web-post-Python-FastAPI"
+
+[[overview_hourly_data]]
+timestamp_entry_ISO = "2025-03-20T00:12:22"
+timestamp_intended_ISO = "2025-03-20T00:11:00"
+safe_to_make_observation = true
+floatable_present = true
+scum_present = true
+foam_present = true
+oil_present = false
+operator = "Clayton Bennett"
+source = "web-post-Python-FastAPI"
+

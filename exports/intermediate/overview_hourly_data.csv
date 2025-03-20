@@ -1,0 +1,8 @@
+timestamp_entry_ISO,timestamp_intended_ISO,operator,source,influent_flow_rate_MGD,after_wet_well_flow_rate_MGD,effluent_flow_rate_MGD,was_flow_rate_MGD,cod_predisinfection_mgPerLiter
+2025-03-17T14:00:50,2025-03-17T14:00:41,CB,local-gui-Python-FreeSimpleGUI,33.0,44.0,55.0,66.0,77.0
+timestamp_entry_ISO,timestamp_intended_ISO,influent_flow_rate_MGD,after_wet_well_flow_rate_MGD,effluent_flow_rate_MGD,was_flow_rate_MGD,cod_predisinfection_mgPerLiter,operator,source
+2025-03-17T14:02:59,2025-03-17T14:02:00,1.0,2.0,3.0,4.0,5.0,CB,web-post-Python-FastAPI
+timestamp_entry_ISO,timestamp_intended_ISO,influent_flow_rate_MGD,after_wet_well_flow_rate_MGD,effluent_flow_rate_MGD,was_flow_rate_MGD,cod_predisinfection_mgPerLiter,operator,source
+2025-03-19T21:26:18,2025-03-19T21:26:00,0.1,2.0,,,,,web-post-Python-FastAPI
+2025-03-19T22:28:14,2025-03-13T23:11:11,MikeGee,local-gui-Python-FreeSimpleGUI,1.0,1.0,3.0,4.0,6.0
+2025-03-19T22:28:34,2025-03-13T22:00:00,MikeGee,local-gui-Python-FreeSimpleGUI,2.0,1.0,3.0,4.0,6.0
